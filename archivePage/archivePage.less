@@ -1,0 +1,444 @@
+@import "../css/reset.css";
+@import "../css/root.less";
+body {
+    background-color: #f6f6f6;
+    min-width: 1200px;
+}
+
+.w56 {
+    // width: 56px;
+    width: 8.6%;
+}
+
+.w57 {
+    // width: 56px;
+    width: 10.8%;
+}
+
+.w60 {
+    // width: 60px;
+    width: 5.2%;
+}
+
+.w70 {
+    // width: 70px;
+    width: 5.8%;
+}
+
+.w72 {
+    // width: 72px;
+    width: 7.8%;
+}
+
+.w78 {
+    width: 8.3%; // width: 78px;
+}
+
+.w90 {
+    // width: 90px;
+    width: 9.5%;
+}
+
+.w94 {
+    // width: 94px;
+    width: 9.8%;
+}
+
+.w108 {
+    // width: 108px;
+    width: 9.2%;
+}
+
+.w110 {
+    // width: 110px;
+    width: 11.3%;
+}
+
+.w186 {
+    // width: 186px;
+    width: 17.3%;
+}
+
+.mal20 {
+    margin-left: 20px;
+}
+
+main {
+    // 左块
+    .leftBox {
+        position: absolute;
+        width: 190px;
+        height: 770px;
+        background-color: #fff;
+        .headline1,
+        .headline2 {
+            width: 190px;
+            height: 52px;
+            line-height: 52px;
+            font-size: 16px;
+            color: #333333;
+            position: relative;
+            vertical-align: middle;
+            padding-left: 14px;
+            .seticon {
+                width: 20px;
+                height: 17px;
+                margin-right: 16px;
+                top: 0;
+                left: 0;
+            }
+            .managementicon {
+                width: 20px;
+                height: 17px;
+                margin-right: 16px;
+            }
+            .layui-icon {
+                color: #ababab;
+            }
+            &:after {
+                content: ' ';
+                position: absolute;
+                top: 44%;
+                right: 53px;
+                width: 0;
+                height: 0;
+                border: 6px solid transparent;
+                border-top: 6px solid #ababab;
+            }
+        }
+        .headline1:hover {
+            cursor: pointer;
+        }
+        .headline2:hover {
+            cursor: pointer;
+        } // .active2 {
+        //     &:after {
+        //         content: ' ';
+        //         position: absolute;
+        //         top: 50%;
+        //         transform: translateY(-50%);
+        //         .right(70);
+        //         width: 0;
+        //         height: 0;
+        //         border: 6px solid transparent;
+        //         border-left: 6px solid #ababab;
+        //     }
+        // }
+        // ul {
+        //     position: relative;
+        //     li {
+        //         position: relative;
+        //         .height(80);
+        //         .width(325);
+        //         .line-height(80);
+        //         .padding-left(80);
+        //         .font-size(32);
+        //         color: #666666;
+        //         span {
+        //             .margin-left(80);
+        //             .font-size(32);
+        //             color: #666666;
+        //         }
+        //         .Icon1 {
+        //             display: none;
+        //         }
+        //     }
+        //     .active {
+        //         color: #fff;
+        //         background-color: #68b7e7;
+        //     }
+        // }
+        // .quitBtn {
+        //     .width(262);
+        //     .height(80);
+        //     .font-size(32);
+        //     color: #fff;
+        //     background-color: #68b7e7;
+        //     position: absolute;
+        //     .bottom(40);
+        //     .left(33);
+        //     text-align: center;
+        //     .line-height(80);
+        // }
+    } // 右块
+    .rightBox {
+        margin-left: 206px;
+        width: 100%;
+        background-color: red;
+        height: 770px;
+        padding: 15px 16px 16px 222px;
+        .rightContant {
+            width: 100%;
+            height: 100%; //右侧上面块
+            .topBox {
+                width: 100%;
+                height: 98px;
+                background-color: yellow;
+                .btnsBOx {
+                    float: left;
+                    position: relative;
+                    .newBtn {
+                        width: 128px;
+                        height: 34px;
+                        background-color: #68b6e7;
+                        color: #fff;
+                        font-size: 14px;
+                        border-radius: 10px 10px 10px 10px;
+                        display: inline-block;
+                        text-align: center;
+                        line-height: 34px;
+                        margin: 30px 16px 30px 16px;
+                    }
+                    &:after {
+                        content: ' ';
+                        position: absolute;
+                        top: 10px;
+                        right: 0px;
+                        width: 1px;
+                        height: 80px;
+                        background-color: #ccc;
+                    }
+                }
+                .selectBox {
+                    padding-top: 20px;
+                    float: left;
+                    div {
+                        float: left;
+                        p {
+                            font-size: 14px;
+                            color: #666666;
+                            margin-bottom: 10px;
+                        }
+                        .layui-unselect {
+                            width: 127px;
+                            height: 30px;
+                            border-color: #999999;
+                            border-radius: 6px 6px 6px 6px;
+                            background-color: #f6f6f6;
+                            color: #666666;
+                        }
+                    }
+                    .assess {
+                        .layui-unselect {
+                            width: 160px !important;
+                        }
+                        .layui-input {
+                            padding-left: 30px;
+                        }
+                    }
+                    .seekBox {
+                        position: relative;
+                        .search {
+                            width: 204px;
+                            height: 30px;
+                            border-radius: 10px 10px 10px 10px;
+                            border: 1px solid #ccc;
+                            padding-left: 36px;
+                        }
+                        .seekIcon {
+                            background: url('/maternal-web/images/seek.png') no-repeat 0 0;
+                            width: 14px;
+                            height: 14px;
+                            background-size: 14px 14px;
+                            position: absolute;
+                            top: 38px;
+                            left: 10px;
+                        }
+                    }
+                    button {
+                        width: 74px;
+                        height: 34px;
+                        text-align: center;
+                        color: #fff;
+                        background-color: #68b6e7;
+                        font-size: 14px;
+                        line-height: 34px;
+                        border-radius: 10px 10px 10px 10px;
+                        margin-left: 20px;
+                        margin-top: 24px;
+                    }
+                }
+            } // 右侧下面块
+            .bottomBox {
+                width: 100%;
+                min-width: 1300px;
+                background-color: #fff;
+                margin-top: 10px;
+                padding-bottom: 30px;
+                .tableBox {
+                    .layui-table {
+                        overflow: hidden;
+                        border-top: 1px solid #ccc;
+                        thead {
+                            tr {
+                                background-color: #e7f3fb;
+                                th {
+                                    border: none;
+                                    font-size: 16px;
+                                    color: #333;
+                                    height: 60px;
+                                    text-align: left;
+                                    padding: 0px 0px 0px 0px;
+                                }
+                            }
+                        }
+                        tbody {
+                            tr {
+                                font-weight: 100;
+                                border-bottom: 1px solid #ccc;
+                                td {
+                                    border: none;
+                                    height: 56px;
+                                    font-size: 16px;
+                                    text-align: left;
+                                    color: #666;
+                                    font-weight: 100;
+                                    padding: 0px 0px 0px 0px;
+                                }
+                                td:nth-child(1) {
+                                    color: #333333;
+                                }
+                                >a {
+                                    display: block;
+                                    width: 100%;
+                                }
+                                .tableNum {
+                                    padding-left: 30px;
+                                }
+                            }
+                            tr:nth-child(even) {
+                                background-color: #f9f9f9;
+                            }
+                        }
+                    }
+                    .element {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        p {
+                            text-align: left;
+                            font-size: 12px;
+                            position: relative;
+                            display: block;
+                            height: 13px;
+                            line-height: 13px;
+                            padding-left: 12px;
+                        }
+                        .greenStrip {
+                            &:after {
+                                content: ' ';
+                                position: absolute;
+                                top: 1px;
+                                left: 0;
+                                width: 10px;
+                                height: 10px;
+                                background-color: green;
+                                border-radius: 50%;
+                            }
+                        }
+                        .yellowStrip {
+                            &:after {
+                                content: ' ';
+                                position: absolute;
+                                top: 1px;
+                                left: 0;
+                                width: 10px;
+                                height: 10px;
+                                background-color: yellow;
+                                border-radius: 50%;
+                            }
+                        }
+                        .orangeStrip {
+                            &:after {
+                                content: ' ';
+                                position: absolute;
+                                top: 1px;
+                                left: 0;
+                                width: 10px;
+                                height: 10px;
+                                background-color: orange;
+                                border-radius: 50%;
+                            }
+                        }
+                        .proponStrip {
+                            &:after {
+                                content: ' ';
+                                position: absolute;
+                                top: 1px;
+                                left: 0;
+                                width: 10px;
+                                height: 10px;
+                                background-color: purple;
+                                border-radius: 50%;
+                            }
+                        }
+                        .redStrip {
+                            &:after {
+                                content: ' ';
+                                position: absolute;
+                                top: 1px;
+                                left: 0;
+                                width: 10px;
+                                height: 10px;
+                                background-color: red;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+                .pageBox {
+                    text-align: center;
+                    position: relative;
+                    margin-top: 40px;
+                    #test1 {
+                        display: inline-block;
+                        .layui-laypage a {
+                            margin: 0 10px 0 10px;
+                            font-size: 16px;
+                        }
+                        text-align: center; // .margin-top(40);
+                        .layui-laypage-prev {
+                            background-color: #e7e7e7;
+                            color: black;
+                            margin: 0 10px 0 10px;
+                            height: 25px;
+                            width: 50px;
+                            padding: 0px;
+                            line-height: 25px;
+                        }
+                        .layui-laypage-next {
+                            background-color: #e7e7e7;
+                            color: black;
+                            margin: 0 10px 0 10px;
+                            height: 25px;
+                            width: 50px;
+                            padding: 0px;
+                            line-height: 25px;
+                        }
+                    }
+                    b {
+                        font-size: 16px;
+                        font-weight: 100;
+                        position: absolute;
+                        right: 0;
+                        top: 25%;
+                    }
+                    .pagination {
+                        display: inline-block; 
+                        margin-left: 30px;
+                        position: absolute;
+                        top:24%;
+                        .layui-unselect {
+                            width: 127px;
+                            height: 30px;
+                            border-color: #999999;
+                            border-radius: 6px 6px 6px 6px;
+                            background-color: #f6f6f6;
+                            color: #666666;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

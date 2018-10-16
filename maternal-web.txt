@@ -1,0 +1,14 @@
+maternal-web 孕产妇-web端 目录结构
+/maternal-web
+    /js                         公共js
+    /css                        公共css
+    /images                     图片
+    /plugins                    插件库
+    /login                      登录页
+        /login.html
+        /login.less
+        /login.js
+   /archivePage                 档案首页/新建档案
+        /archivePage.html
+        /archivePage.less
+        /archivePage.js

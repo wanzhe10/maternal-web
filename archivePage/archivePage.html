@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>档案首页</title>
+    <link rel="stylesheet" href="/maternal-web/plugins/layui/css/layui.css">
+    <link rel="stylesheet/less" type="text/css" href="/maternal-web/archivePage/archivePage.less" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <script src="/maternal-web/js/jquery.js" charset="utf-8"></script>
+    <script src="/maternal-web/plugins/layui/layui.all.js" charset="utf-8"></script>
+    <script src="/maternal-web/js/less.min.js"></script>
+    <script src="/maternal-web/js/root.js" charset="utf-8"></script>
+    <script src="/maternal-web/archivePage/archivePage.js" charset="utf-8"></script>
+</head>
+<script>
+    $(document).ready(function(){
+$("header").load("/maternal-web/common/header.html");
+});
+</script>
+
+<body>
+    <header></header>
+    <main>
+        <div class="leftBox">
+            <div class="headline1">
+                <img src="/maternal-web/images/Archives.png" alt=" 档案管理" class="seticon">档案管理&nbsp;&nbsp;
+            </div>
+            <!-- <ul class="configurationTop">
+        <li class="womenInformationLi active">
+            <i class="newsIcon2"></i>
+            <i class="newsIcon icon2" style="display:block;"></i> 机构信息维护
+        </li>
+        <li class="newRecordLi">
+            科室信息维护
+        </li>
+        <li class=" assessmentLi">
+            人员信息维护
+        </li>
+        <li class="affirmLi">
+            人员角色维护
+        </li>
+        <li class="jurisdiction">
+            产检信息维护
+        </li>
+        <li class="report">
+            报告单解读维护
+        </li>
+    </ul> -->
+            <div class="headline2">
+                <img src="/maternal-web/images/data.png" alt="数据统计" class="managementicon">数据统计
+            </div>
+            <!-- <ul class="configurationBottom">
+        <li class="">
+            用户个人信息
+        </li>
+        <li class="">
+            修改密码
+        </li>
+    </ul> -->
+            <!-- <div class="quitBtn">退出登录</div> -->
+        </div>
+        <div class="rightBox">
+            <div class="rightContant">
+                <div class="topBox clearfix">
+                    <div class="btnsBOx">
+                        <div class="newBtn">新建孕妇档案</div>
+                    </div>
+                    <div class="selectBox clearfix">
+                        <form action="" class="layui-form clearfix">
+                            <div class="mal20">
+                                <p>档案管理</p>
+                                <select class="marryType">
+                                    <option value="0" selected="selected">请选择</option>
+                                    <option value="1">再婚</option>
+                                    <option value="2">其他</option>
+                                </select>
+                            </div>
+                            <div class="mal20 assess">
+                                <p>风险评估</p>
+                                <select class="marryType">
+                                    <option value="0" selected="selected">黄色(较高风险)</option>
+                                    <option value="1">再婚</option>
+                                    <option value="2">其他</option>
+                                </select>
+                            </div>
+                            <div class="mal20">
+                                <p>就诊目的</p>
+                                <select class="marryType">
+                                    <option value="0" selected="selected">请选择</option>
+                                    <option value="1">再婚</option>
+                                    <option value="2">其他</option>
+                                </select>
+                            </div>
+                            <div class="mal20 seekBox">
+                                <p>搜索</p>
+                                <input type="text" class="search" placeholder="请输入姓名或手机号">
+                                <i class="seekIcon"></i>
+                            </div>
+                            <button>查询</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="bottomBox">
+                    <div class="tableBox">
+                        <table class="layui-table" lay-even>
+                            <thead>
+                                <tr>
+                                    <th class="w70" style="padding-left: 20px">序号</th>
+                                    <th class="w78">姓名</th>
+                                    <th class="w108">就诊目的</th>
+                                    <th class="w186">身份证</th>
+                                    <th class="w60">年龄</th>
+                                    <th class="w72">孕周</th>
+                                    <th class="w110">孕产期</th>
+                                    <th class="w56">血型</th>
+                                    <th class="w90">评分等级</th>
+                                    <th class="w57">高危因素</th>
+                                    <th class="w180">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody class="recordBody">
+                                <tr>
+                                    <td class="tableNum">1
+                                        <div class="tag"></div>
+                                    </td>
+                                    <td class="username">陈鑫磊</td>
+                                    <td class="username">第三次产检</td>
+                                    <td class="idCard">1302281988092741118</td>
+                                    <td class="age">29</td>
+                                    <td class="gestational">26+3</td>
+                                    <td class="pregnant">2017-10-03</td>
+                                    <td class="blood">B</td>
+                                    <td class="grade">10</td>
+                                    <td class="element">
+                                        <p class="greenStrip">绿色(0)项</p>
+                                        <p class="yellowStrip">黄色（12）项</p>
+                                        <p class="orangeStrip">橙色（12）项</p>
+                                        <p class="proponStrip">紫色（12）项</p>
+                                        <p class="redStrip">红色（12）项</p>
+                                    </td>
+                                    <td class="operation">
+                                        <a href="javascript:;" class="look">查看</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tableNum">1
+                                        <div class="tag"></div>
+                                    </td>
+                                    <td class="username">陈鑫磊</td>
+                                    <td class="username">第三次产检</td>
+                                    <td class="idCard">1302281988092741118</td>
+                                    <td class="age">29</td>
+                                    <td class="gestational">26+3</td>
+                                    <td class="pregnant">2017-10-03</td>
+                                    <td class="blood">B</td>
+                                    <td class="grade">10</td>
+                                    <td class="element">
+                                        <p class="greenStrip">绿色(0)项</p>
+                                        <p class="yellowStrip">黄色（12）项</p>
+                                        <p class="orangeStrip">橙色（12）项</p>
+                                        <p class="proponStrip">紫色（12）项</p>
+                                        <p class="redStrip">红色（12）项</p>
+                                    </td>
+                                    <td class="operation">
+                                        <a href="javascript:;" class="look">查看</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tableNum">1
+                                        <div class="tag"></div>
+                                    </td>
+                                    <td class="username">陈鑫磊</td>
+                                    <td class="username">第三次产检</td>
+                                    <td class="idCard">1302281988092741118</td>
+                                    <td class="age">29</td>
+                                    <td class="gestational">26+3</td>
+                                    <td class="pregnant">2017-10-03</td>
+                                    <td class="blood">B</td>
+                                    <td class="grade">10</td>
+                                    <td class="element">
+                                        <p class="greenStrip">绿色(0)项</p>
+                                        <p class="yellowStrip">黄色（12）项</p>
+                                        <p class="orangeStrip">橙色（12）项</p>
+                                        <p class="proponStrip">紫色（12）项</p>
+                                        <p class="redStrip">红色（12）项</p>
+                                    </td>
+                                    <td class="operation">
+                                        <a href="javascript:;" class="look">查看</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tableNum">1
+                                        <div class="tag"></div>
+                                    </td>
+                                    <td class="username">陈鑫磊</td>
+                                    <td class="username">第三次产检</td>
+                                    <td class="idCard">1302281988092741118</td>
+                                    <td class="age">29</td>
+                                    <td class="gestational">26+3</td>
+                                    <td class="pregnant">2017-10-03</td>
+                                    <td class="blood">B</td>
+                                    <td class="grade">10</td>
+                                    <td class="element">
+                                        <p class="greenStrip">绿色(0)项</p>
+                                        <p class="yellowStrip">黄色（12）项</p>
+                                        <p class="orangeStrip">橙色（12）项</p>
+                                        <p class="proponStrip">紫色（12）项</p>
+                                        <p class="redStrip">红色（12）项</p>
+                                    </td>
+                                    <td class="operation">
+                                        <a href="javascript:;" class="look">查看</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tableNum">1
+                                        <div class="tag"></div>
+                                    </td>
+                                    <td class="username">陈鑫磊</td>
+                                    <td class="username">第三次产检</td>
+                                    <td class="idCard">1302281988092741118</td>
+                                    <td class="age">29</td>
+                                    <td class="gestational">26+3</td>
+                                    <td class="pregnant">2017-10-03</td>
+                                    <td class="blood">B</td>
+                                    <td class="grade">10</td>
+                                    <td class="element">
+                                        <p class="greenStrip">绿色(0)项</p>
+                                        <p class="yellowStrip">黄色（12）项</p>
+                                        <p class="orangeStrip">橙色（12）项</p>
+                                        <p class="proponStrip">紫色（12）项</p>
+                                        <p class="redStrip">红色（12）项</p>
+                                    </td>
+                                    <td class="operation">
+                                        <a href="javascript:;" class="look">查看</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tableNum">1
+                                        <div class="tag"></div>
+                                    </td>
+                                    <td class="username">陈鑫磊</td>
+                                    <td class="username">第三次产检</td>
+                                    <td class="idCard">1302281988092741118</td>
+                                    <td class="age">29</td>
+                                    <td class="gestational">26+3</td>
+                                    <td class="pregnant">2017-10-03</td>
+                                    <td class="blood">B</td>
+                                    <td class="grade">10</td>
+                                    <td class="element">
+                                        <p class="greenStrip">绿色(0)项</p>
+                                        <p class="yellowStrip">黄色（12）项</p>
+                                        <p class="orangeStrip">橙色（12）项</p>
+                                        <p class="proponStrip">紫色（12）项</p>
+                                        <p class="redStrip">红色（12）项</p>
+                                    </td>
+                                    <td class="operation">
+                                        <a href="javascript:;" class="look">查看</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tableNum">1
+                                        <div class="tag"></div>
+                                    </td>
+                                    <td class="username">陈鑫磊</td>
+                                    <td class="username">第三次产检</td>
+                                    <td class="idCard">1302281988092741118</td>
+                                    <td class="age">29</td>
+                                    <td class="gestational">26+3</td>
+                                    <td class="pregnant">2017-10-03</td>
+                                    <td class="blood">B</td>
+                                    <td class="grade">10</td>
+                                    <td class="element">
+                                        <p class="greenStrip">绿色(0)项</p>
+                                        <p class="yellowStrip">黄色（12）项</p>
+                                        <p class="orangeStrip">橙色（12）项</p>
+                                        <p class="proponStrip">紫色（12）项</p>
+                                        <p class="redStrip">红色（12）项</p>
+                                    </td>
+                                    <td class="operation">
+                                        <a href="javascript:;" class="look">查看</a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pageBox">
+                        <div id="test1"></div>
+                      
+                            <div class="pagination">
+<form action="" class="layui-form clearfix">
+                                <select class="marryType">
+                                    <option value="0" selected="selected">请选择</option>
+                                    <option value="1">再婚</option>
+                                    <option value="2">其他</option>
+                                </select>
+</form>
+                            </div>
+
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -106,6 +106,7 @@ function mateCard(UUserCard) {
     }
     $('.spouseAge').val(num);
 }
+
 // var token = window.localStorage.getItem('maternaltoken');
 
 function HttpRequstForPost(httpUrl, dataType, dataFrom, sucFn, errFn) {
