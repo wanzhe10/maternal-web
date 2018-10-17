@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,15 +14,21 @@
     <script src="/maternal-web/js/root.js" charset="utf-8"></script>
     <script src="/maternal-web/archivePage/archivePage.js" charset="utf-8"></script>
 </head>
-<script>
-    $(document).ready(function(){
-$("header").load("/maternal-web/common/header.html");
-});
-</script>
-
 <body>
-    <header></header>
-    <main>
+    <header>
+        <div class="headerBox clearfix">
+            <img src="/maternal-web/images/login.png" alt="围产期建档评估管理系统">
+            <span class="character">档案首页/新建档案</span>
+            <div class="headerrightBox">
+                <p class="welcome">欢迎<i class="doctorName">周晓晓</i>医生</p>
+                <div class="exitBtn">
+                    <i class="exitIcon"></i>
+                    <span>退出登录</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="clearfix">
         <div class="leftBox">
             <div class="headline1">
                 <img src="/maternal-web/images/Archives.png" alt=" 档案管理" class="seticon">档案管理&nbsp;&nbsp;
@@ -108,17 +113,17 @@ $("header").load("/maternal-web/common/header.html");
                         <table class="layui-table" lay-even>
                             <thead>
                                 <tr>
-                                    <th class="w70" style="padding-left: 20px">序号</th>
-                                    <th class="w78">姓名</th>
-                                    <th class="w108">就诊目的</th>
-                                    <th class="w186">身份证</th>
-                                    <th class="w60">年龄</th>
-                                    <th class="w72">孕周</th>
+<th class="w68 tableNumTittle">序号</th>
+                                    <th class="w76">姓名</th>
+                                    <th class="w110">就诊目的</th>
+                                    <th class="w184">身份证</th>
+<th class="w60 ageTittle">年龄</th>
+<th class="w72 gestationalTittle">孕周</th>
                                     <th class="w110">孕产期</th>
-                                    <th class="w56">血型</th>
-                                    <th class="w90">评分等级</th>
-                                    <th class="w57">高危因素</th>
-                                    <th class="w180">操作</th>
+<th class="w56 bloodTittle">血型</th>
+<th class="w90 gradeTittle">评分等级</th>
+                                    <th class="w96">高危因素</th>
+<th class="w58 operationTittle">操作</th>
                                 </tr>
                             </thead>
                             <tbody class="recordBody">
@@ -289,23 +294,27 @@ $("header").load("/maternal-web/common/header.html");
                     </div>
                     <div class="pageBox">
                         <div id="test1"></div>
-                      
-                            <div class="pagination">
-<form action="" class="layui-form clearfix">
-                                <select class="marryType">
-                                    <option value="0" selected="selected">请选择</option>
-                                    <option value="1">再婚</option>
-                                    <option value="2">其他</option>
-                                </select>
-</form>
-                            </div>
 
-                       
+                        <div class="pagination">
+                            <form action="" class="layui-form clearfix">
+                                <select class="marryType">
+                                    <option value="0" selected="selected">7条/页</option>
+                                    <option value="1">14条/页</option>
+                                    <option value="2">21条/页</option>
+                                </select>
+                            </form>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <footer>
+        <p class="footerNews">Copyright © 2018 医来医往(北京)科技有限公司</p>
+    </footer>
+
 </body>
 
 </html>

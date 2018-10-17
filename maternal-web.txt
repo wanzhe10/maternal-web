@@ -12,3 +12,8 @@ maternal-web 孕产妇-web端 目录结构
         /archivePage.html
         /archivePage.less
         /archivePage.js
+    /newFile                    新建孕妇档案
+        /newFile.html
+        /newFile.less
+        /newFile.js
+        

@@ -1,0 +1,425 @@
+@import "../css/reset.css";
+@import "../css/root.less";
+body {
+    background-color: #f6f6f6;
+    width: 1200px;
+    margin: 0 auto;
+    min-width: 1200px; // position: relative;
+}
+
+.layui-tab-brief>.layui-tab-title .layui-this {
+    color: #68b6e7;
+    font-weight: bold;
+}
+
+.layui-tab-brief>.layui-tab-more li.layui-this:after,
+.layui-tab-brief>.layui-tab-title .layui-this:after {
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #68b6e7;
+}
+
+.layui-tab-title .layui-this:after {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    content: '';
+    width: 100%;
+    height: 41px;
+    border-width: 1px;
+    border-style: solid;
+    border-bottom-color: #fff;
+    border-radius: 2px 2px 0 0;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.layui-form-radio>i:hover,
+.layui-form-radioed>i {
+    color: #68b7e7;
+    font-size: 17px;
+}
+
+.layui-form-radio>i {
+    margin-right: 8px;
+    font-size: 17px;
+}
+
+.layui-form-checkbox span {
+    background-color: #d2d2d2;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; // .padding(0, 10, 0, 10);
+    // .font-size(32);
+    // font-size: 14px;
+}
+
+.mgr0 {
+    margin-right: 0px;
+    display: inline-block;
+}
+
+.mgr76 {
+    margin-right: 76px;
+    display: inline-block;
+}
+
+.mgb20 {
+    margin-bottom: 20px;
+}
+
+.mgl16 {
+    margin-left: 16px;
+}
+
+header {
+    .headerBox {
+        width: 100%;
+        height: 84px;
+        line-height: 84px;
+        position: relative;
+        background-color: #fff;
+    }
+    .character {
+        color: #333333;
+        font-size: 18px;
+        margin-left: 220px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .clearfix:after {
+        content: ".";
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        display: block;
+        clear: both;
+        overflow: hidden;
+        zoom: 1;
+    }
+    .headerrightBox {
+        float: right;
+        margin-right: 20px;
+    }
+    .welcome {
+        display: inline-block;
+        width: 124px;
+        border-right: 2px solid #888888;
+        height: 16px;
+        color: 333333;
+        font-size: 16px;
+        line-height: 16px;
+        margin-right: 30px;
+    }
+    .doctorName {
+        font-style: normal;
+        color: 333333;
+        font-size: 16px;
+    }
+    .exitBtn {
+        position: relative;
+        display: inline-block;
+    }
+    .exitBtn:hover {
+        cursor: pointer;
+    }
+    .exitIcon {
+        position: absolute;
+        background: url('/maternal-web/images/exit.png') no-repeat 0 0;
+        top: 35px;
+        left: -22px;
+        width: 14px;
+        height: 14px;
+        background-size: 14px 14px;
+    }
+}
+
+main {
+    // 左块
+    .leftBox {
+        position: absolute;
+        width: 190px;
+        height: 630px;
+        background-color: #fff;
+        .headline1,
+        .headline2,
+        .headline3,
+        .headline4 {
+            width: 190px;
+            height: 52px;
+            line-height: 52px;
+            font-size: 16px;
+            color: #333333;
+            position: relative;
+            vertical-align: middle;
+            padding-left: 14px;
+            .leftIcon {
+                width: 20px;
+                height: 17px;
+                margin-right: 16px;
+            }
+            .layui-icon {
+                color: #ababab;
+            }
+            &:after {
+                content: ' ';
+                position: absolute;
+                top: 44%;
+                right: 53px;
+                width: 0;
+                height: 0;
+                border: 6px solid transparent;
+                border-top: 6px solid #ababab;
+            }
+        }
+        .headline:hover {
+            cursor: pointer;
+        }
+        .active {
+            background-color: #f0f8fd;
+        }
+    } // 右块
+    .rightBox {
+        width: 100%;
+        padding: 16px 0px 16px 206px; //右侧上面块
+        .layui-tab-title {
+            background-color: #fff;
+            height: 66px;
+            li {
+                height: 66px;
+                line-height: 66px;
+                font-size: 14px;
+                color: #333333;
+            }
+        }
+        .layui-tab-content {
+            background-color: #fff;
+            padding: 14px 24px 24px 28px;
+            margin-top: 15px;
+            .pregnantNewsBox {
+                // 孕妇基本信息块
+                div {
+                    margin-right: 76px;
+                    display: inline-block;
+                    h3 {
+                        font-size: 14px;
+                        color: #666666;
+                        margin: 10px 0;
+                    }
+                    input {
+                        width: 260px;
+                        height: 40px;
+                        border: 1px solid #ccc;
+                        border-radius: 8px; // margin: 10px 0px;
+                        padding-left: 16px;
+                    }
+                    p {
+                        color: #fd4242;
+                        display: none;
+                    }
+                    .layui-unselect,
+                    .layui-form-select {
+                        width: 260px;
+                        height: 40px; // margin: 10px 0px;
+                        input {
+                            background-color: #f6f6f6;
+                        }
+                    }
+                }
+                div:nth-child(3n) {
+                    margin-right: 0px;
+                }
+                .wire {
+                    width: 100%;
+                    height: 1px;
+                    border-bottom: 1px dashed #ccc;
+                    margin-top: 24px;
+                } // 绑定卡号
+                .bindingBox {
+                    position: relative;
+                    .bindingBtn {
+                        position: absolute;
+                        top: 38px;
+                        right: -76px;
+                        width: 72px;
+                        height: 40px;
+                        background-color: #68b6e7;
+                        color: #fff;
+                        font-size: 14px;
+                        line-height: 40px;
+                        text-align: center;
+                        border-radius: 8px;
+                    }
+                } // 出生年月
+                .birthBox {
+                    position: relative;
+                    .birth {
+                        position: absolute;
+                        top: 50px;
+                        right: 10px;
+                        display: inline;
+                        color: #666666;
+                        .birth_age {
+                            position: relative;
+                            margin-right: 10px;
+                        }
+                        .birth_sex {
+                            margin-right: 8px;
+                            &:before {
+                                content: ' ';
+                                position: absolute;
+                                top: -10px;
+                                right: 36px;
+                                width: 2px;
+                                height: 40px;
+                                background: #cccccc;
+                            }
+                        }
+                    }
+                }
+            }
+            .spouseNewsBox {
+                // 孕妇基本信息块
+                div {
+                    // margin-right: 76px;
+                    display: inline-block;
+                    h3 {
+                        font-size: 14px;
+                        color: #666666;
+                        margin: 10px 0;
+                    }
+                    input {
+                        width: 260px;
+                        height: 40px;
+                        border: 1px solid #ccc;
+                        border-radius: 8px; // margin: 10px 0px;
+                        padding-left: 16px;
+                    }
+                    p {
+                        color: #fd4242;
+                        display: none;
+                    }
+                    .layui-unselect,
+                    .layui-form-select {
+                        // width: 260px;
+                        // height: 40px; // margin: 10px 0px;
+                        input {
+                            background-color: #f6f6f6;
+                        }
+                    }
+                } // div:nth-child(3n) {
+                //     margin-right: 0px;
+                // }
+                .wire {
+                    width: 100%;
+                    height: 1px;
+                    border-bottom: 1px dashed #ccc;
+                    margin-top: 24px;
+                } // 绑定卡号
+                .bindingBox {
+                    position: relative;
+                    .bindingBtn {
+                        position: absolute;
+                        top: 38px;
+                        right: -76px;
+                        width: 72px;
+                        height: 40px;
+                        background-color: #68b6e7;
+                        color: #fff;
+                        font-size: 14px;
+                        line-height: 40px;
+                        text-align: center;
+                        border-radius: 8px;
+                    }
+                } // 出生年月
+                .birthBox {
+                    position: relative;
+                    .birth {
+                        position: absolute;
+                        top: 50px;
+                        right: 10px;
+                        display: inline;
+                        color: #666666;
+                        .birth_age {
+                            position: relative;
+                            margin-right: 10px;
+                        }
+                        .birth_sex {
+                            margin-right: 8px;
+                            &:before {
+                                content: ' ';
+                                position: absolute;
+                                top: -10px;
+                                right: 36px;
+                                width: 2px;
+                                height: 40px;
+                                background: #cccccc;
+                            }
+                        }
+                    }
+                }
+                .somkingBox {
+                    margin-top:24px;
+                    margin-right:76px;
+                    width: 260px;
+                    height: 52px;
+                    line-height: 52px;
+                    .box-shadow();
+                    .somkingFont {
+                        width: 75px;
+                        height: 52px;
+                        background-color: #f6f6f6;
+                        text-align: center;
+                        line-height: 52px;
+                        float: left;
+                    }
+                    .somkingSelect {
+                        padding-left: 26px;
+                        width: 185px;
+                        float: left;
+                        .smkingYes {
+                            width: 50%;
+                            float: left;
+                            position: relative;
+                            &:before {
+                                content: ' ';
+                                position: absolute;
+                                top: 15px;
+                                right: 18px;
+                                width:1px;
+                                height: 20px;
+                                background: #cccccc;
+                            }
+                        }
+                        .smokingNo {
+                            float: left;
+                            width: 50%;
+                        }
+                        .layui-form-radio {
+                            line-height: 52px;
+                            margin: 0px;
+                            font-size: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    .footerNews {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        margin-bottom: 20px;
+        transform: translate(-50%);
+        color: #999999;
+    }
+}

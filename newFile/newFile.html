@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>档案管理</title>
+    <link rel="stylesheet" href="/maternal-web/plugins/layui/css/layui.css">
+    <link rel="stylesheet/less" type="text/css" href="/maternal-web/newFile/newFile.less" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <script src="/maternal-web/js/jquery.js" charset="utf-8"></script>
+    <script src="/maternal-web/plugins/layui/layui.all.js" charset="utf-8"></script>
+    <script src="/maternal-web/js/less.min.js"></script>
+    <script src="/maternal-web/js/root.js" charset="utf-8"></script>
+    <script src="/maternal-web/newFile/newFile.js" charset="utf-8"></script>
+</head>
+<script>
+
+</script>
+
+<body>
+    <header>
+        <div class="headerBox clearfix">
+            <img src="/maternal-web/images/login.png" alt="围产期建档评估管理系统">
+            <span class="character">档案管理</span>
+            <div class="headerrightBox">
+                <p class="welcome">欢迎<i class="doctorName">周晓晓</i>医生</p>
+                <div class="exitBtn">
+                    <i class="exitIcon"></i>
+                    <span>退出登录</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="clearfix">
+        <div class="leftBox">
+            <div class="headline headline1 active">
+                <img src="/maternal-web/images/Archives.png" alt=" 档案管理" class="seticonManagement leftIcon">档案管理&nbsp;&nbsp;
+            </div>
+            <!-- <ul class="configurationTop">
+        <li class="womenInformationLi active">
+            <i class="newsIcon2"></i>
+            <i class="newsIcon icon2" style="display:block;"></i> 机构信息维护
+        </li>
+        <li class="newRecordLi">
+            科室信息维护
+        </li>
+        <li class=" assessmentLi">
+            人员信息维护
+        </li>
+        <li class="affirmLi">
+            人员角色维护
+        </li>
+        <li class="jurisdiction">
+            产检信息维护
+        </li>
+        <li class="report">
+            报告单解读维护
+        </li>
+</ul> -->
+            <div class="headline headline2">
+                <img src="/maternal-web/images/user.png" alt="用户管理" class="userManagement leftIcon">用户管理
+            </div>
+            <div class="headline headline3">
+                <img src="/maternal-web/images/Settings.png" alt="后台配置" class="managementicon leftIcon">后台配置
+            </div>
+            <div class="headline headline4">
+                <img src="/maternal-web/images/data.png" alt="数据统计" class="dataManagementicon leftIcon">数据统计
+            </div>
+            <!-- <ul class="configurationBottom">
+        <li class="">
+            用户个人信息
+        </li>
+        <li class="">
+            修改密码
+        </li>
+    </ul> -->
+        </div>
+        <div class="rightBox">
+            <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this pregnantNews">孕妇基本信息</li>
+                    <li class="spouseNews">配偶一般信息</li>
+                    <li class="pregnancyNews">孕产信息</li>
+                    <li class="healthCheckup">体格检查</li>
+                    <li class="riskAssessment">高危评估</li>
+                    <li class="checkAffirm">检查确认</li>
+                </ul>
+                <div class="layui-tab-content">
+                    <form action="" class="layui-form clearfix">
+                        <!-- 孕妇基本信息 -->
+                        <div class="layui-tab-item pregnantNewsBox">
+                            <div class="mgr76">
+                                <h3>孕妇姓名（必填）</h3>
+                                <input type="text" class="pregnantName" placeholder="请输入姓名">
+                                <p>此项为必填项！</p>
+                            </div>
+                            <div class="mgr76 bindingBox">
+                                <h3>就诊卡号（必填）</h3>
+                                <input type="text" class="pregnantFN" placeholder="请输入就诊卡号">
+                                <p>此项为必填项！</p>
+                                <div class="bindingBtn">卡号绑定</div>
+                            </div>
+                            <div class="mgr0">
+                                <h3>手机号</h3>
+                                <input type="text" class="pregnantPhone" placeholder="请输入手机号">
+                                <p>此项为必填项！</p>
+                            </div>
+                            <div class="mgr76">
+                                <h3>证件类型（必填）</h3>
+                                <select class="idCardType">
+                                    <option value="0">身份证</option>
+                                    <!-- <option value="1">军官证</option> -->
+                                    <!-- <option value="2">护照</option> -->
+                                    <!-- <option value="3">港澳通行证</option> -->
+                                </select>
+                                <p>此项为必填项！</p>
+                            </div>
+                            <div class="mgr76">
+                                <h3>身份证号（必填）</h3>
+                                <input type="tel" class="pregnantIdCard" placeholder="请输入身份证号码">
+                                <p>此项为必填项！</p>
+                            </div>
+                            <div class="mgr0 birthBox">
+                                <h3>出生年月（自动获取）</h3>
+                                <input type="text" class="layui-input pregnantDateBirth" placeholder="" id="test1"
+                                    readonly="readonly">
+                                <h5 class="birth">
+                                    <!-- <span class="birth_age">12</span> -->
+                                    <span class="birth_sex">女</span>
+                                </h5>
+                            </div>
+                            <div class="mgr76">
+                                <h3>结婚年龄（岁）</h3>
+                                <input type="text" class="pregnantMarriageAge" placeholder="请输入结婚年龄">
+                                <p>此项为必填项！</p>
+                            </div>
+                            <div class="mgr76">
+                                <h3>孕前体重（kg）</h3>
+                                <input type="text" class="pregnantWeight" placeholder="请输入年龄">
+                                <p>此项为必填项！</p>
+                            </div>
+                            <div class="wire"></div>
+                            <div class="mgr76">
+                                <h3>婚姻状况</h3>
+                                <select class="marryType">
+                                    <option value="0" selected="selected">初婚</option>
+                                    <option value="1">再婚</option>
+                                    <option value="2">其他</option>
+                                </select>
+                            </div>
+                            <div class="mgr76">
+                                <h3>婚检</h3>
+                                <select class="marryCheck">
+                                    <option value="0">没有</option>
+                                    <option value="1" selected="selected">有</option>
+                                    <option></option>
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="mgr0">
+                                <h3>近半年避孕方法</h3>
+                                <select class="contraception">
+                                    <option value="0">未避孕</option>
+                                    <option value="1">口服避孕药</option>
+                                    <option value="2">避孕套</option>
+                                    <option value="3">避孕膜</option>
+                                    <option value="4">其他</option>
+                                </select>
+                            </div>
+                            <div class="mgr76">
+                                <h3>文化程度</h3>
+                                <select class="education">
+                                    <option value="0">硕士以上</option>
+                                    <option value="1" selected="selected">本科</option>
+                                    <option value="2">大专</option>
+                                    <option value="3">中专及高中</option>
+                                    <option value="4">初中</option>
+                                    <option value="5">文盲</option>
+                                </select>
+                            </div>
+                            <div class="mgr76">
+                                <h3>民族</h3>
+                                <select class="nation">
+                                    <!-- <option>请选择</option>
+                                            <option>汉族</option>
+                                            <option>其他</option>
+                                            <option></option>
+                                            <option></option> -->
+                                </select>
+                            </div>
+                            <br />
+                            <div class="mgr76">
+                                <h3>职业</h3>
+                                <select class="job">
+                                    <option value="0" selected="selected">无</option>
+                                    <option value="1">农、牧、渔</option>
+                                    <option value="2">干部、职员</option>
+                                    <option value="3">医院、科技</option>
+                                    <option value="4">工人</option>
+                                    <option value="5">个体</option>
+                                    <option value="6">家务</option>
+                                </select>
+                            </div>
+                            <div class="mgr76">
+                                <h3>工作单位</h3>
+                                <input type="text" class="work" placeholder="请输入工作单位">
+                            </div>
+                            <div class="wire"></div>
+                            <div class="mgr76">
+                                <h3>户口所在地</h3>
+                                <select class="job">
+                                    <option value="0" selected="selected">无</option>
+                                    <option value="1">农、牧、渔</option>
+                                    <option value="2">干部、职员</option>
+                                    <option value="3">医院、科技</option>
+                                    <option value="4">工人</option>
+                                    <option value="5">个体</option>
+                                    <option value="6">家务</option>
+                                </select>
+                                <input type="text" placeholder="请输入详细地址" class="mgl16">
+                            </div>
+                            <div class="mgr76">
+                                <h3>现住地址</h3>
+                                <select class="job">
+                                    <option value="0" selected="selected">无</option>
+                                    <option value="1">农、牧、渔</option>
+                                    <option value="2">干部、职员</option>
+                                    <option value="3">医院、科技</option>
+                                    <option value="4">工人</option>
+                                    <option value="5">个体</option>
+                                    <option value="6">家务</option>
+                                </select>
+                                <input type="text" placeholder="请输入详细地址" class="presentAddress mgl16">
+                            </div>
+
+
+                        </div>
+                        <!-- 配偶一般信息 -->
+                        <div class="layui-tab-item spouseNewsBox  layui-show">
+                            <div class="mgr76">
+                                <h3>配偶姓名</h3>
+                                <input type="text" class="spouseName" placeholder="请输入姓名">
+                                <p>此项为必填项！</p>
+                            </div>
+                            <div class="mgr76">
+                                <h3>手机号</h3>
+                                <input type="number" class="spousePhone" placeholder="请输入手机号">
+                                <p>此项为必填项！</p>
+                            </div>
+                            <div class="mgr0">
+                                <h3>结婚年龄（岁）</h3>
+                                <input type="number" class="spouseMarriageAge" placeholder="请输入结婚年龄">
+                                <p>此项为必填项！</p>
+                            </div>
+                            <div class="mgr76">
+                                <h3>证件类型</h3>
+                                <select class="spouseIdCardType">
+                                    <option value="0">身份证</option>
+                                    <!-- <option value="1">军官证</option> -->
+                                    <!-- <option value="2">护照</option> -->
+                                    <!-- <option value="3">港澳通行证</option> -->
+                                </select>
+                                <p>此项为必填项！</p>
+                            </div>
+                            <div class="mgr76">
+                                <h3>身份证号</h3>
+                                <input type="tel" class="spouseIdCard" placeholder="请输入身份证号码">
+                                <p>此项为必填项！</p>
+                            </div>
+                            <div class="mgr0 birthBox">
+                                <h3>配偶年龄</h3>
+                                <input type="number" class="spouseAge">
+                                <h5 class="birth">
+                                    <!-- <span class="birth_age">12</span> -->
+                                    <span class="birth_sex">男</span>
+                                </h5>
+                            </div>
+                            <div class="wire"></div>
+                            <div class="mgr76">
+                                <h3>结婚状况</h3>
+                                <select class="spouseMarryType">
+                                    <option value="0" selected="selected">初婚</option>
+                                    <option value="1">再婚</option>
+                                    <option value="2">其他</option>
+                                </select>
+                            </div>
+                            <div class="mgr76">
+                                <h3>婚检</h3>
+                                <select class="spouseMarryCheck">
+                                    <option value="0" selected="selected">没有</option>
+                                    <option value="1">有</option>
+                                </select>
+                            </div>
+                            <div class="mgr0">
+                                <h3>健康状态</h3>
+                                <select class="healthType">
+                                    <option value="0">健康</option>
+                                    <option value="1">一般</option>
+                                    <option value="2">较弱</option>
+                                    <option></option>
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="mgr76">
+                                <h3>文化程度</h3>
+                                <select class="spouseEducation">
+                                    <option value="0">硕士以上</option>
+                                    <option value="1" selected="selected">本科</option>
+                                    <option value="2">大专</option>
+                                    <option value="3">中专及高中</option>
+                                    <option value="4">初中</option>
+                                    <option value="5">文盲</option>
+                                </select>
+                            </div>
+                            <div class="mgr76">
+                                <h3>民族</h3>
+                                <select class="job">
+                                    <option value="0" selected="spouseJob">无</option>
+                                    <option value="1">农、牧、渔</option>
+                                    <option value="2">干部、职员</option>
+                                    <option value="3">医院、科技</option>
+                                    <option value="4">工人</option>
+                                    <option value="5">个体</option>
+                                    <option value="6">家务</option>
+                                </select>
+                            </div>
+                            <div class="wire"></div>
+                            <form class="layui-form" action="">
+                                <!--  吸烟-->
+                                <div class="somkingBox clearfix">
+                                    <div class="somkingFont">吸烟</div>
+                                    <div class="somkingSelect clearfix">
+                                        <div class="smkingYes">
+                                            <input type="radio" name="smoking" value="1" title="是" lay-filter="smoking">
+                                        </div>
+                                        <div class="smokingNo">
+                                            <input type="radio" name="smoking" value="0" title="否" checked lay-filter="smoking">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- 饮酒 -->
+<div class="somkingBox clearfix">
+    <div class="somkingFont">饮酒</div>
+    <div class="somkingSelect clearfix">
+        <div class="smkingYes">
+<input type="radio" name="drink" value="1" title="是">
+        </div>
+        <div class="smokingNo">
+<input type="radio" name="drink" value="2" title="否" checked>
+        </div>
+    </div>
+
+</div>
+                                <!-- 家族史 -->
+<div class="somkingBox clearfix" style="margin-right:0px;">
+    <div class="somkingFont">家族史</div>
+    <div class="somkingSelect clearfix">
+        <div class="smkingYes">
+<input type="radio" name="history1" lay-filter="history1" value="是" title="是" class="choose_yes">
+        </div>
+        <div class="smokingNo">
+<input type="radio" name="history1" lay-filter="history1" value="否" title="否" checked class="choose_no">
+        </div>
+    </div>
+
+</div>
+                            </form>
+
+
+                        </div>
+                        <div class="layui-tab-item pregnancyNewsBox">内容3</div>
+                        <div class="layui-tab-item healthCheckupBox ">内容4</div>
+                        <div class="layui-tab-item riskAssessmentBox">内容5</div>
+                        <div class="layui-tab-item checkAffirmBox">内容6</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="footerNews">Copyright © 2018 医来医往(北京)科技有限公司</p>
+    </footer>
+
+</body>
+
+</html>
