@@ -94,18 +94,18 @@
                             <div class="mgr76">
                                 <h3>孕妇姓名（必填）</h3>
                                 <input type="text" class="pregnantName" placeholder="请输入姓名">
-                                <p>此项为必填项！</p>
+                                <p class="redFont">此项为必填项！</p>
                             </div>
                             <div class="mgr76 bindingBox">
                                 <h3>就诊卡号（必填）</h3>
                                 <input type="text" class="pregnantFN" placeholder="请输入就诊卡号">
-                                <p>此项为必填项！</p>
+                                <p class="redFont">此项为必填项！</p>
                                 <div class="bindingBtn">卡号绑定</div>
                             </div>
                             <div class="mgr0">
                                 <h3>手机号</h3>
                                 <input type="text" class="pregnantPhone" placeholder="请输入手机号">
-                                <p>此项为必填项！</p>
+                                <p class="redFont">此项为必填项！</p>
                             </div>
                             <div class="mgr76">
                                 <h3>证件类型（必填）</h3>
@@ -115,12 +115,12 @@
                                     <!-- <option value="2">护照</option> -->
                                     <!-- <option value="3">港澳通行证</option> -->
                                 </select>
-                                <p>此项为必填项！</p>
+                                <p class="redFont">此项为必填项！</p>
                             </div>
                             <div class="mgr76">
                                 <h3>身份证号（必填）</h3>
                                 <input type="tel" class="pregnantIdCard" placeholder="请输入身份证号码">
-                                <p>此项为必填项！</p>
+                                <p class="redFont">此项为必填项！</p>
                             </div>
                             <div class="mgr0 birthBox">
                                 <h3>出生年月（自动获取）</h3>
@@ -134,12 +134,12 @@
                             <div class="mgr76">
                                 <h3>结婚年龄（岁）</h3>
                                 <input type="text" class="pregnantMarriageAge" placeholder="请输入结婚年龄">
-                                <p>此项为必填项！</p>
+                                <p class="redFont">此项为必填项！</p>
                             </div>
                             <div class="mgr76">
                                 <h3>孕前体重（kg）</h3>
                                 <input type="text" class="pregnantWeight" placeholder="请输入年龄">
-                                <p>此项为必填项！</p>
+                                <p class="redFont">此项为必填项！</p>
                             </div>
                             <div class="wire"></div>
                             <div class="mgr76">
@@ -238,21 +238,21 @@
 
                         </div>
                         <!-- 配偶一般信息 -->
-                        <div class="layui-tab-item spouseNewsBox  layui-show">
+                        <div class="layui-tab-item spouseNewsBox  clearfix">
                             <div class="mgr76">
                                 <h3>配偶姓名</h3>
                                 <input type="text" class="spouseName" placeholder="请输入姓名">
-                                <p>此项为必填项！</p>
+                                <p class="redFont">此项为必填项！</p>
                             </div>
                             <div class="mgr76">
                                 <h3>手机号</h3>
                                 <input type="number" class="spousePhone" placeholder="请输入手机号">
-                                <p>此项为必填项！</p>
+                                <p class="redFont">此项为必填项！</p>
                             </div>
                             <div class="mgr0">
                                 <h3>结婚年龄（岁）</h3>
                                 <input type="number" class="spouseMarriageAge" placeholder="请输入结婚年龄">
-                                <p>此项为必填项！</p>
+                                <p class="redFont">此项为必填项！</p>
                             </div>
                             <div class="mgr76">
                                 <h3>证件类型</h3>
@@ -262,12 +262,12 @@
                                     <!-- <option value="2">护照</option> -->
                                     <!-- <option value="3">港澳通行证</option> -->
                                 </select>
-                                <p>此项为必填项！</p>
+                                <p class="redFont">此项为必填项！</p>
                             </div>
                             <div class="mgr76">
                                 <h3>身份证号</h3>
                                 <input type="tel" class="spouseIdCard" placeholder="请输入身份证号码">
-                                <p>此项为必填项！</p>
+                                <p class="redFont">此项为必填项！</p>
                             </div>
                             <div class="mgr0 birthBox">
                                 <h3>配偶年龄</h3>
@@ -327,52 +327,602 @@
                                 </select>
                             </div>
                             <div class="wire"></div>
-                            <form class="layui-form" action="">
-                                <!--  吸烟-->
-                                <div class="somkingBox clearfix">
-                                    <div class="somkingFont">吸烟</div>
-                                    <div class="somkingSelect clearfix">
-                                        <div class="smkingYes">
-                                            <input type="radio" name="smoking" value="1" title="是" lay-filter="smoking">
-                                        </div>
-                                        <div class="smokingNo">
-                                            <input type="radio" name="smoking" value="0" title="否" checked lay-filter="smoking">
-                                        </div>
+                            <!-- <form class="layui-form" action=""> -->
+                            <!--  吸烟-->
+                            <div class="somkingBox clearfix">
+                                <div class="somkingFont">吸烟</div>
+                                <div class="somkingSelect clearfix">
+                                    <div class="smkingYes">
+                                        <input type="radio" name="smoking" value="1" title="是" lay-filter="smoking">
                                     </div>
-
+                                    <div class="smokingNo">
+                                        <input type="radio" name="smoking" value="0" title="否" checked lay-filter="smoking">
+                                    </div>
                                 </div>
-                                <!-- 饮酒 -->
-<div class="somkingBox clearfix">
-    <div class="somkingFont">饮酒</div>
-    <div class="somkingSelect clearfix">
-        <div class="smkingYes">
-<input type="radio" name="drink" value="1" title="是">
-        </div>
-        <div class="smokingNo">
-<input type="radio" name="drink" value="2" title="否" checked>
-        </div>
-    </div>
+                            </div>
+                            <!-- 饮酒 -->
+                            <div class="somkingBox clearfix">
+                                <div class="somkingFont">饮酒</div>
+                                <div class="somkingSelect clearfix">
+                                    <div class="smkingYes">
+                                        <input type="radio" name="drink" value="1" title="是">
+                                    </div>
+                                    <div class="smokingNo">
+                                        <input type="radio" name="drink" value="2" title="否" checked>
+                                    </div>
+                                </div>
 
-</div>
-                                <!-- 家族史 -->
-<div class="somkingBox clearfix" style="margin-right:0px;">
-    <div class="somkingFont">家族史</div>
-    <div class="somkingSelect clearfix">
-        <div class="smkingYes">
-<input type="radio" name="history1" lay-filter="history1" value="是" title="是" class="choose_yes">
-        </div>
-        <div class="smokingNo">
-<input type="radio" name="history1" lay-filter="history1" value="否" title="否" checked class="choose_no">
-        </div>
-    </div>
+                            </div>
+                            <!-- 家族史 -->
+                            <div class="somkingBox clearfix" style="margin-right:0px;">
+                                <div class="somkingFont">家族史</div>
+                                <div class="somkingSelect clearfix">
+                                    <div class="smkingYes">
+                                        <input type="radio" name="history1" lay-filter="history1" value="是" title="是"
+                                            class="choose_yes">
+                                    </div>
+                                    <div class="smokingNo">
+                                        <input type="radio" name="history1" lay-filter="history1" value="否" title="否"
+                                            checked class="choose_no">
+                                    </div>
+                                </div>
 
-</div>
-                            </form>
+                            </div>
+                            <!-- 吸烟隐藏显示块 -->
+                            <div class="somkingCirculationBox">
+                                <p>请您输入每天的支数</p>
+                                <input type="text" placeholder="请输入" class="cigaretteNUm">
+                                <h5 class="birth">
+                                    <span class="bar_day">支/日</span>
+                                </h5>
+                            </div>
+                            <!-- 饮酒隐藏显示块 -->
+                            <div class="drinkCirculationBox">
+                                <p>请选择饮酒习惯</p>
+                                <a href="jsvascript:;" class="drinkOccasionally">偶尔</a>
+                                <a href="jsvascript:;" class="drinkOften">经常</a>
+                            </div>
+                            <!-- 家族史隐藏显示块 -->
+                            <div class="history1CirculationBox" style="margin-right:0px;">
+                                <input type="email" class="inquire" placeholder="请输入拼音首字母" onKeyUp="value=value.replace(/[\W]/g,'')">
+                                <i class="seekIcon"></i>
+                                <p>已选择</p>
+                                <ul class="hideBox clearfix">
+                                    <li>糖尿病1</li>
+                                    <li>糖尿病2</li>
+                                    <li>糖尿病3</li>
+                                    <li>糖尿病4</li>
+                                    <li>糖尿病5</li>
+                                    <li>糖尿病6</li>
+                                </ul>
+                                <div class="history1Select">
+                                    <ul>
+                                        <li>选择1</li>
+                                        <li>选择2</li>
+                                        <li>选择3</li>
+                                        <li>选择4</li>
+                                        <li>选择5</li>
+                                        <li>选择6</li>
+                                        <li>选择7</li>
+                                        <li>选择8</li>
+                                        <li>选择9</li>
+                                        <li>选择10</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- </form> -->
+                            <div class="somkingBox clearfix">
+                                <div class="somkingFont">吸烟</div>
+                                <div class="somkingSelect clearfix">
+                                    <div class="smkingYes">
+                                        <input type="radio" name="smoking" value="1" title="是" lay-filter="smoking">
+                                    </div>
+                                    <div class="smokingNo">
+                                        <input type="radio" name="smoking" value="0" title="否" checked lay-filter="smoking">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wire"></div>
+
+                            <div class="mgr76 spouseSiteBox">
+                                <p>现住地址</p>
+                                <select class="job">
+                                    <option value="0" selected="selected">无</option>
+                                    <option value="1">农、牧、渔</option>
+                                    <option value="2">干部、职员</option>
+                                    <option value="3">医院、科技</option>
+                                    <option value="4">工人</option>
+                                    <option value="5">个体</option>
+                                    <option value="6">家务</option>
+                                </select>
+                                <input type="text" placeholder="请输入详细地址" class="mgl16">
+                            </div>
+                        </div>
+                        <!-- 孕产信息模块 -->
+                        <div class="layui-tab-item pregnancyNewsBox  clearfix">
+                            <div class="mgr76 fl">
+                                <h3>初诊日期</h3>
+                                <input type="text" class="layui-input mgl30 firstCheckDate" placeholder="" id="test2"
+                                    readonly="readonly" disabled="disabled">
+
+                                <p class="redFont">此项为必填项！</p>
+                            </div>
+                            <div class="mgr76 fl">
+                                <h3>末次月经</h3>
+                                <input type="tel" class="layui-input mgl30 lastMenstruation" placeholder="" id="test3"
+                                    readonly="readonly">
+
+                                <p class="redFont">此项为必填项！</p>
+                            </div>
+                            <div class="mgr0 fl">
+                                <h3>预产期</h3>
+                                <input type="text" class="mgl30 dueDate" placeholder="自动计算" readonly='readonly'>
+                                <p class="redFont">此项为必填项！</p>
+                            </div>
+                            <div class="mgr76 fl">
+                                <h3>孕周</h3>
+                                <div class="gestationalWeeksBox clearfix">
+                                    <div class="newAgeOfMenarche">孕周</div>
+                                    <div class="newAgeOfMenarcheDay">孕天</div>
+                                </div>
+                            </div>
+                            <div class="mgr76 fl">
+                                <h3>月经史-初潮（岁）</h3>
+                                <input type="text" class="menstrualHistoryAge" placeholder="初潮">
+                            </div>
+                            <div class="mgr0 fl">
+                                <h3>月经史—周期（天）</h3>
+                                <input type="text" placeholder="周期" class="menstrualHistoryDay">
+                            </div>
+                            <div class="wire"></div>
+                            <div class="mgr76 mgb12">
+                                <h3>怀孕次数</h3>
+                                <select class="job">
+                                    <option value="0" selected="selected">请选择</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <table class="layui-table dynamicTable" lay-even>
+                                <thead>
+                                    <tr>
+                                        <th class="w80">胎次</th>
+                                        <th class="w124">孕周</th>
+                                        <th class="w150">年月日</th>
+                                        <th class="w86">年龄</th>
+                                        <th class="w122">分娩方式</th>
+                                        <th class="w84">性别</th>
+                                        <th class="w84">健否</th>
+                                        <th class="w112">备注</th>
+                                        <th class="w78">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="kang">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>20+4</td>
+                                        <td>2018-11-11</td>
+                                        <td>24</td>
+                                        <td>刨宫产</td>
+                                        <td>男</td>
+                                        <td>健康</td>
+                                        <td>啊哈哈哈哈</td>
+                                        <td><a href="javasctipt:;" class="amendBtn">修改</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="wire"></div>
+                            <div class="mgr76">
+                                <h3>孕期用药</h3>
+                                <select class="parturitionFrontPharmacy">
+                                    <option value="0">否</option>
+                                    <option value="1">有</option>
+                                </select>
+                            </div>
+                            <div class="mgr76">
+                                <h3>尿酮体</h3>
+                                <select class="ketosis">
+                                    <option value="0">否</option>
+                                    <option value="1">有</option>
+                                </select>
+                            </div>
+                            <div class="mgr0">
+                                <h3>早孕反应程度</h3>
+                                <select class="morningSickness">
+                                    <option value="3">无</option>
+                                    <option value="0">轻</option>
+                                    <option value="1">中</option>
+                                    <option value="2">重</option>
+                                </select>
+                            </div>
+                            <div class="mgr76">
+                                <h3>宠物接触</h3>
+                                <select class="animalContact">
+                                    <option value="0">否</option>
+                                    <option value="1">有</option>
+                                </select>
+                            </div>
+                            <div class="mgr76">
+                                <h3>接触放射性</h3>
+                                <select class="contactRadioactiveRays" lay-filter="contactRadioactiveRays">
+                                    <option value="0">否</option>
+                                    <option value="1">有</option>
+                                </select>
+                            </div>
+                            <div class="mgr0">
+                                <h3>接触放射性时间</h3>
+                                <input type="text" class="layui-input mgl30 contactRadioactiveRaysDate" placeholder="请输入时间"
+                                    id="test4" disabled="disabled" readonly="readonly" onfocus="this.blur();">
+                            </div>
+                            <div class="wire"></div>
+
+                            <!--孕产信息接触毒物 -->
+                            <div class="somkingBox">
+                                <div class="somkingFont">接触毒物</div>
+                                <div class="somkingSelect clearfix">
+                                    <div class="smkingYes">
+                                        <input type="radio" name="contact" lay-filter="contact" value="1" title="是"
+                                            class="choose_yes">
+                                    </div>
+                                    <div class="smokingNo">
+                                        <input type="radio" name="contact" lay-filter="contact" value="0" title="否"
+                                            class="choose_yes" checked>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- 孕产信息病毒感染 -->
+                            <div class="somkingBox">
+                                <div class="somkingFont">病毒感染</div>
+                                <div class="somkingSelect clearfix">
+                                    <div class="smkingYes">
+                                        <input type="radio" name="virus" lay-filter="virus" value="1" title="是">
+                                    </div>
+                                    <div class="smokingNo">
+                                        <input type="radio" name="virus" lay-filter="virus" value="0" title="否" checked>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- 孕产信息家族史 -->
+                            <div class="somkingBox  mgr0">
+                                <div class="somkingFont">家族史</div>
+                                <div class="somkingSelect clearfix">
+                                    <div class="smkingYes">
+                                        <input type="radio" name="history2" lay-filter="history2" value="1" title="是"
+                                            checked class="choose_no">
+                                    </div>
+                                    <div class="smokingNo">
+                                        <input type="radio" name="history2" lay-filter="history2" value="0" title="否"
+                                            checked class="choose_no">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 孕产信息接触毒物-隐藏显示块 -->
+                            <div class="contactPoisonBox">
+                                <p>请您输入每天的支数</p>
+                                <input type="text" placeholder="请输入毒物名称" class="contactToxicName mgb12">
+                                <input type="text" placeholder="请输入接触时间" class="contactToxicDate">
+                            </div>
+                            <!-- 孕产信息病毒感染-隐藏显示块 -->
+                            <div class="virusInfectionBox">
+                                <p>请选择感染类型</p>
+                                <ul class="clearfix">
+                                    <li>流感</li>
+                                    <li>风疹</li>
+                                    <li>疱疹</li>
+                                    <li class="mgb0">肝炎</li>
+                                    <li class="mgb0">腮腺炎</li>
+                                    <li class="mgb0">其他</li>
+                                </ul>
+                            </div>
+                            <!-- 孕产信息家族史-隐藏显示块 -->
+
+                            <div class="familyHistoryBox" style="margin-right:0px;">
+                                <input type="email" class="inquire" placeholder="请输入拼音首字母" onKeyUp="value=value.replace(/[\W]/g,'')">
+                                <i class="seekIcon"></i>
+                                <p>已选择</p>
+                                <ul class="hideBox clearfix">
+                                    <li>糖尿病1</li>
+                                    <li>糖尿病2</li>
+                                    <li>糖尿病3</li>
+                                    <li>糖尿病4</li>
+                                    <li>糖尿病5</li>
+                                    <li>糖尿病6</li>
+
+                                </ul>
+                                <div class="familyHistorySelect">
+                                    <ul>
+                                        <li>选择1</li>
+                                        <li>选择2</li>
+                                        <li>选择3</li>
+                                        <li>选择4</li>
+                                        <li>选择5</li>
+                                        <li>选择6</li>
+                                        <li>选择7</li>
+                                        <li>选择8</li>
+                                        <li>选择9</li>
+                                        <li>选择10</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="modificationLayer">
+                                <div class="modificationLayerNav">
+                                    <span class="parity">胎次一</span>
+                                </div>
+                                <div class="modificationLayerMain clearfix">
+                                    <div class="mgr30 fl">
+                                        <h3>孕周</h3>
+                                        <input type="text" class="layui-input mgl30 layerWeeks" placeholder="" id="test2"
+                                            readonly="readonly" disabled="disabled">
+                                    </div>
+                                    <div class="mgr30 fl">
+                                        <h3>年月日</h3>
+                                        <input type="text" class="layui-input mgl30 layerDate" placeholder="" id="test2"
+                                            readonly="readonly" disabled="disabled">
+                                    </div>
+                                    <div class="mgr0 fl">
+                                        <h3>年龄</h3>
+                                        <input type="text" class="layui-input mgl30 layerAge" placeholder="" id="test2"
+                                            readonly="readonly" disabled="disabled">
+                                    </div>
+                                    <div class="mgr30">
+                                        <h3>分娩方式</h3>
+                                        <select class="layerDelivery">
+                                            <option value="0">自然分娩</option>
+                                            <option value="1">剖宫产</option>
+                                        </select>
+                                    </div>
+                                    <div class="mgr30">
+                                        <h3>性别</h3>
+                                        <select class="layerSex">
+                                            <option value="0">男</option>
+                                            <option value="1">女</option>
+                                        </select>
+                                    </div>
+                                    <div class="mgr0">
+                                        <h3>健否</h3>
+                                        <select class="layerSpleen">
+                                            <option value="0">健康</option>
+                                            <option value="1">死亡</option>
+                                        </select>
+                                    </div>
+                                    <h3>备注</h3>
+                                    <textarea class="layerRemark"></textarea>
+                                    <input type="button" value="取消" class="cancelBtn">
+                                    <input type="button" value="保存" class="saveBtn">
+                                </div>
+                            </div>
+
+
+
+
+
 
 
                         </div>
-                        <div class="layui-tab-item pregnancyNewsBox">内容3</div>
-                        <div class="layui-tab-item healthCheckupBox ">内容4</div>
+                        <!-- 体格检查模块 -->
+                        <div class="layui-tab-item healthCheckupBox layui-show clearfix">
+                            <h2 class="healthCheckTittle">一般检查</h2>
+                            <div class="mgr76">
+                                <h3>血 压（mmHg）</h3>
+                                <div class="bloodBox">
+                                    <input type="number" placeholder="低压" class="lowTension">
+                                    <input type="number" placeholder="高压" class="hyperpiesia">
+                                </div>
+                                <p class="redFont">此项为必填项！</p>
+                            </div>
+                            <div class="mgr76">
+                                <h3>身 高（cm）</h3>
+                                <input type="number" class="height" placeholder="请输入姓名">
+                                <p class="redFont">此项为必填项！</p>
+                            </div>
+                            <div class="mgr0">
+                                <h3>体 重（kg）</h3>
+                                <input type="number" class="weight" placeholder="请输入姓名">
+                                <p class="redFont">此项为必填项！</p>
+                            </div>
+
+                            <div class="healthCheckupBox_firstBox clearfix">
+                                <div class="mgr38">
+                                    <h3>心 率</h3>
+                                    <select class="baseHeartRate">
+                                        <option value="0">正常</option>
+                                        <option value="1">异常</option>
+                                    </select>
+                                </div>
+                                <div class="mgr77">
+                                    <h3>肺</h3>
+                                    <select class="baseLung">
+                                        <option value="0">正常</option>
+                                        <option value="1">异常</option>
+                                    </select>
+                                </div>
+
+                                <div class="mgr38">
+                                    <h3>肝</h3>
+                                    <select class="baseAbdomenLiver">
+                                        <option value="0">正常</option>
+                                        <option value="1">异常</option>
+                                    </select>
+                                </div>
+
+                                <div class="mgr77">
+                                    <h3>脾</h3>
+                                    <select class="baseAbdomenSpleen">
+                                        <option value="0">正常</option>
+                                        <option value="1">异常</option>
+                                    </select>
+                                </div>
+
+                                <div class="mgr38">
+                                    <h3>脊 柱</h3>
+                                    <select class="baseSpinalLimbsDeformity">
+                                        <option value="0">正常</option>
+                                        <option value="1">畸形</option>
+                                    </select>
+                                </div>
+
+                                <div class="mgr0">
+                                    <h3>四肢水肿</h3>
+                                    <select class="baseSpinalLimbsEdema">
+                                        <option value="0">无</option>
+                                        <option value="1">轻</option>
+                                        <option value="2">中</option>
+                                        <option value="3">重</option>
+                                    </select>
+                                </div>
+                                <div class="mgr38">
+                                    <h3>乳 房</h3>
+                                    <select class="baseHeartRate">
+                                        <option value="0">正常</option>
+                                        <option value="1">异常</option>
+                                    </select>
+                                </div>
+                                <div class="mgr77">
+                                    <h3>乳 头</h3>
+                                    <select class="baseNipple">
+                                        <option value="0">凸</option>
+                                        <option value="1">凹</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="wire" style="margin-bottom: 16px;"></div>
+                            <h2 class="healthCheckTittle">妇科检查</h2>
+                            <div class="healthCheckupBox_firstBox clearfix">
+                                <div class="mgr38">
+                                    <h3>外阴</h3>
+                                    <select class="obstetricsVulva">
+                                        <option value="0">正常</option>
+                                        <option value="1">异常</option>
+                                    </select>
+                                </div>
+                                <div class="mgr77">
+                                    <h3>阴道</h3>
+                                    <select class="obstetricsVagina">
+                                        <option value="0">通畅</option>
+                                    </select>
+                                </div>
+
+                                <div class="mgr38">
+                                    <h3>宫颈</h3>
+                                    <select class="obstetricsCervix">
+                                        <option value="0">正常</option>
+                                    </select>
+                                </div>
+
+                                <div class="mgr77">
+                                    <h3>宫体</h3>
+                                    <select class="obstetricsCorpus">
+                                        <option value="0">正常</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mgr0">
+                                <h3>附件</h3>
+                                <select class="obstetricsPairsAttachment">
+                                    <option value="0">正常</option>
+                                </select>
+                            </div>
+                            <div class="wire" style="margin-bottom: 16px;"></div>
+                            <h2 class="healthCheckTittle">化验检查</h2>
+                            <div class="mgr76">
+                                <h3>尿蛋白</h3>
+                                <input type="number" class="assayUrineProtein">
+                                <p class="redFont">此项为必填项！</p>
+                            </div>
+                            <div class="mgr76">
+                                <h3>血红蛋白</h3>
+                                <input type="number" class="assayHemoglobin">
+                                <p class="redFont">此项为必填项！</p>
+                            </div>
+                            <div class="mgr0">
+                                <h3>血小板</h3>
+                                <input type="number" class="assayBloodPlatelet">
+                            </div>
+                            <div class="mgr0">
+                                <h3>血型</h3>
+                                <select class="assayBloodType">
+                                    <option value="0">O</option>
+                                    <option value="1">A</option>
+                                    <option value="2">B</option>
+                                    <option value="3">AB</option>
+                                    <option value="4">RH</option>
+                                </select>
+                            </div>
+                            <div class="wire" style="margin-bottom: 16px;"></div>
+                            <h2 class="healthCheckTittle mgt140">产科检查</h2>
+                            <div class="mgr76">
+                                <h3>宫高</h3>
+                                <input type="number" class="obstetricsHeight">
+                                <p class="redFont">此项为必填项！</p>
+                            </div>
+                            <div class="mgr76">
+                                <h3>腹围</h3>
+                                <input type="number" class="obstetricsAbdominalGirth">
+                                <p class="redFont">此项为必填项！</p>
+                            </div>
+                            <div class="mgr0">
+                                <h3>先露</h3>
+                                <select class="obstetricsFirstDew">
+                                    <option value="0">未填写</option>
+                                    <option value="1">先头露</option>
+                                    <option value="2">臀先露</option>
+                                </select>
+                            </div>
+                            <div class="mgr76">
+                                <h3>胎心率</h3>
+                                <input type="number" class="obstetricsFetalHeart">
+                                <p class="redFont">此项为必填项！</p>
+                            </div>
+                            <div class="mgr76">
+                                <h3>盆骨出口横径</h3>
+                                <input type="number" class="mgl10 obstetricsTransversePelvicDiameter">
+                                <p class="redFont">此项为必填项！</p>
+                            </div>
+                            <div class="mgr0">
+                                <h3>胎方位</h3>
+                                <select class="obstetricsPlacental">
+                                    <option value="0">未填写</option>
+                                    <option value="1">枕左前位</option>
+                                    <option value="2">枕右横位</option>
+                                    <option value="3">枕右前位</option>
+                                </select>
+                            </div>
+                            <div class="wire"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
                         <div class="layui-tab-item riskAssessmentBox">内容5</div>
                         <div class="layui-tab-item checkAffirmBox">内容6</div>
                     </form>

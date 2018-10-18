@@ -20,4 +20,31 @@ $(function () {
             });
         });
     });
+
+    // 点击修改按钮弹框 
+    $('.amendBtn').click(function(){
+        var $ = layui.jquery;
+        // 弹出层
+        layer.open({
+            type: 1,
+            title: '',
+            area: ['590px', '470px'],
+            // skin: "noBackground",
+            closeBtn: false,
+            shade: [0.7, '#000000'],
+            shadeClose: false,
+            scrollbar: false,
+            content: $('.modificationLayer'),
+        });
+
+    });
+    // 修改怀孕次数弹框取消按钮
+    $('.cancelBtn').click(function(){
+        layer.closeAll();
+        $('.modificationLayer').hide();
+    });
+    // 修改怀孕次数弹框确认按钮
+    $('saveBtn').click(function(){
+    });
+  
 });

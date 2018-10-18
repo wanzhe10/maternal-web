@@ -54,25 +54,67 @@ body {
     // .font-size(32);
     // font-size: 14px;
 }
-
-.mgr0 {
-    margin-right: 0px;
-    display: inline-block;
+.w78{
+    width: 78px;
 }
-
-.mgr76 {
-    margin-right: 76px;
-    display: inline-block;
+.w80{
+    width: 80px;
 }
-
-.mgb20 {
-    margin-bottom: 20px;
+.w84{
+    width: 84px;
+}
+.w86{
+    width: 86px;
+}
+.w112{
+    width: 112px;
+}
+.w122{
+    width: 122px;
+}
+.w124{
+    width: 124px;
+}
+.w150{
+    width: 150px;
 }
 
 .mgl16 {
     margin-left: 16px;
 }
+.mgr0 {
+    margin-right: 0px !important;
+    display: inline-block;
+}
+.mgr30 {
+    margin-right:30px !important;
+}
+.mgr38 {
+    margin-right:44px !important;
+}
+.mgr76 {
+    margin-right: 76px;
+    display: inline-block;
+}
+.mgr77 {
+    margin-right: 78px;
+}
+.mgb0 {
+    margin-bottom: 0px !important;
+}
+.mgt140 {
+    margin-top: 140px !important;
+}
+.mgb12 {
+    margin-bottom: 12px;
+}
+.mgb20 {
+    margin-bottom: 20px;
+}
 
+.fl{
+    float: left;
+}
 header {
     .headerBox {
         width: 100%;
@@ -273,7 +315,7 @@ main {
                                 position: absolute;
                                 top: -10px;
                                 right: 36px;
-                                width: 2px;
+                                width: 1px;
                                 height: 40px;
                                 background: #cccccc;
                             }
@@ -282,10 +324,9 @@ main {
                 }
             }
             .spouseNewsBox {
-                // 孕妇基本信息块
+                // 配偶一般信息模块
                 div {
-                    // margin-right: 76px;
-                    display: inline-block;
+                    display: inline-block; 
                     h3 {
                         font-size: 14px;
                         color: #666666;
@@ -295,24 +336,20 @@ main {
                         width: 260px;
                         height: 40px;
                         border: 1px solid #ccc;
-                        border-radius: 8px; // margin: 10px 0px;
+                        border-radius: 8px; 
                         padding-left: 16px;
                     }
-                    p {
+                    .redFont {
                         color: #fd4242;
                         display: none;
                     }
                     .layui-unselect,
                     .layui-form-select {
-                        // width: 260px;
-                        // height: 40px; // margin: 10px 0px;
                         input {
                             background-color: #f6f6f6;
                         }
                     }
-                } // div:nth-child(3n) {
-                //     margin-right: 0px;
-                // }
+                } 
                 .wire {
                     width: 100%;
                     height: 1px;
@@ -354,16 +391,16 @@ main {
                                 position: absolute;
                                 top: -10px;
                                 right: 36px;
-                                width: 2px;
+                                width: 1px;
                                 height: 40px;
                                 background: #cccccc;
                             }
                         }
                     }
-                }
+                } //吸烟等三个模块
                 .somkingBox {
-                    margin-top:24px;
-                    margin-right:76px;
+                    margin-top: 24px;
+                    margin-right: 76px;
                     width: 260px;
                     height: 52px;
                     line-height: 52px;
@@ -389,7 +426,7 @@ main {
                                 position: absolute;
                                 top: 15px;
                                 right: 18px;
-                                width:1px;
+                                width: 1px;
                                 height: 20px;
                                 background: #cccccc;
                             }
@@ -403,6 +440,500 @@ main {
                             margin: 0px;
                             font-size: 0;
                         }
+                    }
+                } // 吸烟显示隐藏等三个模块
+                .somkingCirculationBox,
+                .drinkCirculationBox,
+                .history1CirculationBox {
+                    float: left;
+                    margin-top: 24px;
+                    margin-right: 80px;
+                    width: 260px;
+                    // height: 86px;
+                    .box-shadow();
+                    position: relative;
+                      p{
+                        font-size: 12px;
+                        color: #666666;
+                        margin-bottom: 12px;
+                        }
+                }
+                // 配偶吸烟显示隐藏快
+                .somkingCirculationBox {
+                    // text-align: center;
+                    padding: 14px 18px 14px 18px;
+                    input {
+                        width: 224px;
+                        height: 32px;
+                    }
+                    .birth {
+                        position: absolute;
+                        top: 50px;
+                        right: 20px;
+                        display: inline;
+                        color: #666666;
+                        .bar_day {
+                            margin-right: 8px;
+                            &:before {
+                                content: ' ';
+                                position: absolute;
+                                top: -7px;
+                                right: 52px;
+                                width: 1px;
+                                height: 30px;
+                                background: #cccccc;
+                            }
+                        }
+                    }
+                }
+                // 配偶饮酒显示隐藏块
+                .drinkCirculationBox {
+                    padding: 13px 20px 13px 20px;
+                     
+                    .drinkOccasionally,.drinkOften{
+                        width: 80px;
+                        height: 32px;
+                        font-size: 14px;
+                        text-align: center;
+                        line-height: 32px;
+                        border:1px solid #ccc;
+                        display: inline-block;
+                        border-radius: 8px;
+                    }
+                    .drinkOccasionally{
+                        margin-right:50px;
+                    }
+                    .active{
+                        background-color: #68b6e7;
+                        color:#fff;
+                        border:none;
+                    }
+                }
+                // 配偶显示隐藏家族史块
+                .history1CirculationBox{
+                     padding: 10px 14px 5px 14px;
+                     position: relative;
+                     input{
+                         width: 226px;
+                         height: 32px;
+                     }
+                     P{
+                         margin-top:12px;
+                     }
+                      .seekIcon {
+                            background: url('/maternal-web/images/seek.png') no-repeat 0 0;
+                            width: 14px;
+                            height: 14px;
+                            background-size: 14px 14px;
+                            position: absolute;
+                            top: 20px;
+                            right: 30px;
+                        }
+                    .hideBox{
+                       li{
+                           float: left;
+                           width: 65px;
+                           height: 30px;
+                           background-color: #68b6e7;
+                           color: #fff;
+                           text-align: center;
+                           line-height: 30px;
+                           border-radius: 8px;
+                           margin-right:12px;
+                           margin-bottom:8px;
+                       } 
+                    }
+                    .familyHistorySelect{
+                        // display: none;
+                          width: 226px;
+                         height: 200px;
+                         position: relative;
+                        overflow: hidden;
+                           ul {
+                         position: absolute;
+                            left: 0;
+                            top: 0;
+                            right: -17px;
+                            bottom: 0;
+                            overflow-x: hidden;
+                            overflow-y: scroll;
+                        li {
+                            font-size: 14px;
+                            margin: 0;
+                            padding:10px;
+                            border-bottom: 1px;
+                            border-bottom-style: solid;
+                            border-bottom-color: #999;
+                            
+                        }
+                        li:hover{
+                            background-color: #d4e8f5;
+                        }
+                    }
+                    }
+                  
+                }
+                // 配偶现住地址块
+                  .spouseSiteBox{
+                        p{
+                            margin-top:24px;
+                            font-size: 14px;
+                            color:#666666;
+                            margin-bottom:16px;
+                        }
+                    }
+            }
+            // 孕产信息模块
+             .pregnancyNewsBox {
+               div {
+                    display: inline-block; 
+                    h3 {
+                        font-size: 14px;
+                        color: #666666;
+                        margin: 10px 0;
+                    }
+                    input {
+                        width: 260px;
+                        height: 40px;
+                        border: 1px solid #ccc;
+                        border-radius: 8px; 
+                        padding-left: 16px;
+                    }
+                    .redFont {
+                        color: #fd4242;
+                        display: none;
+                    }
+                    .layui-unselect,
+                    .layui-form-select {
+                        input {
+                            background-color: #f6f6f6;
+                        }
+                    }
+                } 
+                .wire {
+                    width: 100%;
+                    height: 1px;
+                    border-bottom: 1px dashed #ccc;
+                    margin-top: 24px;
+                } 
+                .gestationalWeeksBox{
+                    margin-right: 0;
+                       width: 260px;
+                        height: 40px;
+                        border: 1px solid #ccc;
+                        border-radius: 8px; 
+                      
+                        div{
+                            display: inline-block;
+                           width: 125px;
+                    //    float: left;
+                             text-align: center;
+                        line-height: 40px;
+                        margin-right:0px !important;
+                        }
+                        .newAgeOfMenarche{
+                            border-right: 1px solid #ccc;
+                        }
+                }
+                 .layui-table {
+                     margin:0px;
+                               
+                                th {
+                                    height: 46px;
+                                    font-size: 14px;
+                                    color: #333333;
+                                    text-align: center;
+                                    background-color: #f6f6f6;
+                                }
+                                tr {
+                                    text-align: center;
+                                     font-size: 14px;
+                                    color: #666;
+                                }
+                                tr:nth-child(2n) {
+                                    input {
+                                        background-color: #f6f6f6 !important;
+                                    }
+                                }
+                                td {
+                                   height: 46px;
+                                     a{
+                                            color: #68b6e7;
+                                        }
+                                }
+                            }
+                            .layui-table tbody tr:nth-child(2n-1):hover {
+                                background: none !important;
+                            }
+                            .layui-table[lay-even] tr:nth-child(even) {
+                       background-color: #f9f9f9;
+                }
+                  .somkingBox {
+                    margin-top: 24px;
+                    margin-right: 76px;
+                    width: 260px;
+                    height: 52px;
+                    line-height: 52px;
+                    .box-shadow();
+                    .somkingFont {
+                        width: 75px;
+                        height: 52px;
+                        background-color: #f6f6f6;
+                        text-align: center;
+                        line-height: 52px;
+                        float: left;
+                    }
+                    .somkingSelect {
+                        padding-left: 26px;
+                        width: 185px;
+                        float: left;
+                        .smkingYes {
+                            width: 50%;
+                            float: left;
+                            position: relative;
+                            &:before {
+                                content: ' ';
+                                position: absolute;
+                                top: 15px;
+                                right: 18px;
+                                width: 1px;
+                                height: 20px;
+                                background: #cccccc;
+                            }
+                        }
+                        .smokingNo {
+                            float: left;
+                            width: 50%;
+                        }
+                        .layui-form-radio {
+                            line-height: 52px;
+                            margin: 0px;
+                            font-size: 0;
+                        }
+                    }
+                } 
+                // 孕产信息隐藏快
+                .contactPoisonBox,
+                .virusInfectionBox,
+                .familyHistoryBox {
+                    float: left;
+                    margin-top: 24px;
+                    margin-right: 80px;
+                    width: 260px;
+                    .box-shadow();
+                    position: relative;
+                    padding:14px 16px;
+                      p{
+                        font-size: 12px;
+                        color: #666666;
+                        margin-bottom: 12px;
+                        }
+                }
+                .contactPoisonBox{
+                     input {
+                        width: 224px;
+                        height: 32px;
+                    }
+                }
+                .virusInfectionBox{
+                    ul{
+                        li{
+                           float: left; 
+                           width: 64px;
+                           height: 30px;
+                           line-height: 30px;
+                           background-color: #ededed;
+                           text-align: center;
+                           font-size: 12px;
+                           color:#999999;
+                           margin-right:12px;
+                           margin-bottom: 10px;
+                        }
+                    }
+                }
+                  .familyHistoryBox{
+                     padding: 10px 14px 5px 14px;
+                     position: relative;
+                     input{
+                         width: 226px;
+                         height: 32px;
+                     }
+                     P{
+                         margin-top:12px;
+                     }
+                      .seekIcon {
+                            background: url('/maternal-web/images/seek.png') no-repeat 0 0;
+                            width: 14px;
+                            height: 14px;
+                            background-size: 14px 14px;
+                            position: absolute;
+                            top: 20px;
+                            right: 30px;
+                        }
+                    .hideBox{
+                       li{
+                           float: left;
+                           width: 65px;
+                           height: 30px;
+                           background-color: #68b6e7;
+                           color: #fff;
+                           text-align: center;
+                           line-height: 30px;
+                           border-radius: 8px;
+                           margin-right:12px;
+                           margin-bottom:8px;
+                       } 
+                    }
+                    .familyHistorySelect{
+                        // display: none;
+                          width: 226px;
+                         height: 200px;
+                         position: relative;
+                        overflow: hidden;
+                           ul {
+                         position: absolute;
+                            left: 0;
+                            top: 0;
+                            right: -17px;
+                            bottom: 0;
+                            overflow-x: hidden;
+                            overflow-y: scroll;
+                        li {
+                            font-size: 14px;
+                            margin: 0;
+                            padding:10px;
+                            border-bottom: 1px;
+                            border-bottom-style: solid;
+                            border-bottom-color: #999;
+                            
+                        }
+                        li:hover{
+                            background-color: #d4e8f5;
+                        }
+                    }
+                    }
+                  
+                  
+                }
+
+                // 修改怀孕次数弹框
+                .modificationLayer{
+                    position: fixed;
+                    top:50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 590px;
+                    background-color: #fff;
+                    display: none;
+                    .modificationLayerNav{
+                        height: 50px;
+                        width: 100%;
+                        background-color: #ededed;
+                        padding-top:16px;
+                        padding-left: 24px;
+                        .parity{
+                            font-size: 16px;
+                            color:#333333;
+
+                        }
+                    }
+                    .modificationLayerMain{
+                        padding:20px 24px;
+                        input{
+                            width: 156px;
+                        }
+                        .layerRemark{
+                            height: 108px;
+                            width: 100%;
+                            border:1px solid #ccc;
+                            border-radius: 8px;
+                            padding-left: 30px;
+                        }
+                        .cancelBtn,.saveBtn{
+                            width: 160px;
+                            height: 40px;
+                            font-size: 14px;
+                            line-height: 40px;
+                            text-align: center;
+                             margin-top:30px;
+                            padding:0px !important;
+                        }
+                        .cancelBtn{
+                            float: left;
+                            background-color: #cccccc;
+                            color:#666666;
+                           
+                        }
+                        .saveBtn{
+                            float: right;
+                             background-color: #68b6e7;
+                            color:#fff;
+                        }
+                    }
+                }
+            }
+             // 体格检查模块
+             .healthCheckupBox {
+                 .healthCheckTittle{
+                     font-size: 16px;
+                     color:#333333;
+                 }
+               div {
+                    display: inline-block; 
+                    float: left;
+                    h3 {
+                        font-size: 14px;
+                        color: #666666;
+                        margin: 10px 0;
+                    }
+                    input {
+                        width: 260px;
+                        height: 40px;
+                        border: 1px solid #ccc;
+                        border-radius: 8px; 
+                        padding-left: 16px;
+                    }
+                    .redFont {
+                        color: #fd4242;
+                        display: none;
+                    }
+                    .layui-unselect,
+                    .layui-form-select {
+                        input {
+                            background-color: #f6f6f6;
+                        }
+                    }
+                } 
+                .wire {
+                    width: 100%;
+                    height: 1px;
+                    border-bottom: 1px dashed #ccc;
+                    margin-top: 24px;
+                } 
+                .bloodBox{
+                      width: 260px;
+                        height: 40px;
+                        line-height: 40px;
+                        border: 1px solid #ccc;
+                        border-radius: 8px; 
+                        input{
+                            width: 50%;
+                            float: left;
+                            height: 38px;
+                            border-radius: 8px;
+                            padding-left: 16px;
+                            border:none;
+                        }
+                        .lowTension{
+                            display: block;
+                            position: relative;
+                            border-radius: 8px 0 0px 8px;
+                            border-right: 1px solid #ccc;
+                        }
+                }
+                .healthCheckupBox_firstBox{
+                    input{
+                        width: 108px;
                     }
                 }
             }
