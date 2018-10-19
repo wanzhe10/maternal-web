@@ -37,6 +37,7 @@
         <div class="leftBox">
             <div class="headline headline1 active">
                 <img src="/maternal-web/images/Archives.png" alt=" 档案管理" class="seticonManagement leftIcon">档案管理&nbsp;&nbsp;
+                <i class="layui-icon">&#xe61a;</i>
             </div>
             <!-- <ul class="configurationTop">
         <li class="womenInformationLi active">
@@ -60,13 +61,16 @@
         </li>
 </ul> -->
             <div class="headline headline2">
-                <img src="/maternal-web/images/user.png" alt="用户管理" class="userManagement leftIcon">用户管理
+                <img src="/maternal-web/images/user.png" alt="用户管理" class="userManagement leftIcon">用户管理&nbsp;&nbsp;
+                <i class="layui-icon">&#xe61a;</i>
             </div>
             <div class="headline headline3">
-                <img src="/maternal-web/images/Settings.png" alt="后台配置" class="managementicon leftIcon">后台配置
+                <img src="/maternal-web/images/Settings.png" alt="后台配置" class="managementicon leftIcon">后台配置&nbsp;&nbsp;
+                <i class="layui-icon">&#xe61a;</i>
             </div>
             <div class="headline headline4">
-                <img src="/maternal-web/images/data.png" alt="数据统计" class="dataManagementicon leftIcon">数据统计
+                <img src="/maternal-web/images/data.png" alt="数据统计" class="dataManagementicon leftIcon">数据统计&nbsp;&nbsp;
+                <i class="layui-icon">&#xe61a;</i>
             </div>
             <!-- <ul class="configurationBottom">
         <li class="">
@@ -78,6 +82,7 @@
     </ul> -->
         </div>
         <div class="rightBox">
+            <form action="" class="layui-form clearfix ">
             <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
                 <ul class="layui-tab-title">
                     <li class="layui-this pregnantNews">孕妇基本信息</li>
@@ -87,10 +92,10 @@
                     <li class="riskAssessment">高危评估</li>
                     <li class="checkAffirm">检查确认</li>
                 </ul>
+               
                 <div class="layui-tab-content">
-                    <form action="" class="layui-form clearfix">
                         <!-- 孕妇基本信息 -->
-                        <div class="layui-tab-item pregnantNewsBox">
+                        <div class="layui-tab-item pregnantNewsBox ">
                             <div class="mgr76">
                                 <h3>孕妇姓名（必填）</h3>
                                 <input type="text" class="pregnantName" placeholder="请输入姓名">
@@ -707,7 +712,7 @@
 
                         </div>
                         <!-- 体格检查模块 -->
-                        <div class="layui-tab-item healthCheckupBox layui-show clearfix">
+                        <div class="layui-tab-item healthCheckupBox  clearfix">
                             <h2 class="healthCheckTittle">一般检查</h2>
                             <div class="mgr76">
                                 <h3>血 压（mmHg）</h3>
@@ -894,8 +899,260 @@
                                     <option value="3">枕右前位</option>
                                 </select>
                             </div>
-                            <div class="wire"></div>
+                            <div class="wire" style="margin-bottom: 16px;"></div>
+                            <h2 class="healthCheckTittle modelBox">
+                                <span class="diagnoseTittle">诊断</span>
+                                <div class="primaryDiagnosisBtn" style=" float: none;">
+                                    <i class="fileIcon"></i>
+                                    <span class="templateTittle ">导入模板</span>
+                                </div>
+                            </h2>
+                            <textarea class="primaryDiagnosis"></textarea>
 
+                            <h2 class="healthCheckTittle modelBox" style="margin-top: 16px;">
+                                <span class="diagnoseTittle">处置</span>
+                                <div class="disposalBtn" style=" float: none;">
+                                    <i class="fileIcon"></i>
+                                    <span class="templateTittle ">导入模板</span>
+                                </div>
+                            </h2>
+                            <textarea class="disposal"></textarea>
+                        </div>
+
+                        <!-- 高危评估模块 -->
+                        <div class="layui-tab-item riskAssessmentBox ">
+                            <span>项目类型</span>
+                            <div class="mgl10">
+                                <select class="idCardType">
+                                    <option value="0">请选择</option>
+                                    <!-- <option value="1">军官证</option> -->
+                                    <!-- <option value="2">护照</option> -->
+                                    <!-- <option value="3">港澳通行证</option> -->
+                                </select>
+                            </div>
+                            <div class="mgl24">
+                                <select class="idCardType">
+                                    <option value="0">请选择</option>
+                                    <!-- <option value="1">军官证</option> -->
+                                    <!-- <option value="2">护照</option> -->
+                                    <!-- <option value="3">港澳通行证</option> -->
+                                </select>
+                            </div>
+                            <span class="mgl174">历史评估记录</span>
+                            <div class="mgl10">
+                                <select class="idCardType">
+                                    <option value="0">请选择</option>
+                                    <!-- <option value="1">军官证</option> -->
+                                    <!-- <option value="2">护照</option> -->
+                                    <!-- <option value="3">港澳通行证</option> -->
+                                </select>
+                            </div>
+                            <input type="button" value="套用" class="useBtn mgl16">
+
+                            <div class="wire"></div>
+                            <!-- 查看全部块 -->
+                            <div class="lookAtallBtnBox">
+                                <h2>基本情况</h2>
+                                <div class="positionWire"></div>
+                                <div class="basicLookAtallBtn">
+                                    <span>查看全部</span>
+                                    <i class="layui-icon">&#xe61a;</i>
+                                </div>
+                            </div>
+                            <div class="basicInformationBox">
+                                <div class="partBox mgr34">
+                                    <div class="partBox_top">
+                                        <i>5</i>
+                                        <span class="fen">分</span>
+                                        <span class="mgl28">黄色（一般风险）</span>
+                                    </div>
+                                    <div class="fivepartBox topicBox">
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                    </div>
+                                </div>
+                                <div class="partBox mgr34">
+                                    <div class="partBox_top">
+                                        <i>10</i>
+                                        <span class="fen">分</span>
+                                        <span class="mgl28">橙色（较高风险）</span>
+                                    </div>
+                                    <div class="tenpartBox topicBox">
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                    </div>
+                                </div>
+                                <div class="partBox">
+                                    <div class="partBox_top">
+                                        <i>20</i>
+                                        <span class="fen">分</span>
+                                        <span class="mgl28">红色（高风险）</span>
+                                    </div>
+                                    <div class="twentypartBox topicBox">
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 孕期合并发症块 -->
+                            <div class="lookAtallBtnBox">
+                                <h2>孕期合并发症</h2>
+                                <div class="positionWire2"></div>
+                                <div class="pregnancyAllBtn">
+                                    <span>查看全部</span>
+                                    <i class="layui-icon">&#xe61a;</i>
+                                </div>
+                            </div>
+                            <ul class="pregnancySelectBox">
+                                <li class="selectAllBtn">全部</li>
+                                <li>心血管系统疾病</li>
+                                <li>呼吸系统疾病</li>
+                                <li>消化系统疾病</li>
+                                <li>泌尿系统疾病</li>
+                                <li>内分泌系统疾病</li>
+                                <li>精神神经系统疾病</li>
+                                <li>血液系统疾病</li>
+                                <li>性传播疾病</li>
+                                <li>免疫系统疾病</li>
+                                <li>肿瘤</li>
+                                <li>吸毒史</li>
+                                <li>其他</li>
+                            </ul>
+
+                            <div class="basicInformationBox">
+                                <div class="partBox mgr34">
+                                    <div class="partBox_top">
+                                        <i>5</i>
+                                        <span class="fen">分</span>
+                                        <span class="mgl28">黄色（一般风险）</span>
+                                    </div>
+                                    <div class="fivepartBox topicBox">
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                    </div>
+                                </div>
+                                <div class="partBox mgr34">
+                                    <div class="partBox_top">
+                                        <i>10</i>
+                                        <span class="fen">分</span>
+                                        <span class="mgl28">橙色（较高风险）</span>
+                                    </div>
+                                    <div class="tenpartBox topicBox">
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                    </div>
+                                </div>
+                                <div class="partBox">
+                                    <div class="partBox_top">
+                                        <i>20</i>
+                                        <span class="fen">分</span>
+                                        <span class="mgl28">红色（高风险）</span>
+                                    </div>
+                                    <div class="twentypartBox topicBox">
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contentBox">
+                                <div class="lookAtallBtnBox">
+                                    <h2>孕期合并发症</h2>
+                                    <div class="positionWire2"></div>
+                                </div>
+                                <div class="partBox mgr34">
+                                    <div class="fivepartBox topicBox">
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                    </div>
+                                </div>
+                                <div class="partBox mgr34">
+                                    <div class="tenpartBox topicBox">
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                    </div>
+                                </div>
+                                <div class="partBox">
+                                    <div class="twentypartBox topicBox">
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                        <a class="topicItem" href="javascript:;">年龄≤35岁或≥18</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 紫色块 -->
+                            <div class="lookAtallBtnBox">
+                                <h2>紫色</h2>
+                                <div class="positionWire3"></div>
+                                <div class="violetBtn">
+                                    <span>查看全部</span>
+                                    <i class="layui-icon">&#xe61a;</i>
+                                </div>
+                            </div>
+                            <div class="violetConcealBox topicBox">
+                                <a class="topicItem" href="javascript:;">所有妊娠合传染性疾病--如毒性肝炎、霉素、HIV感染及艾滋病、结核病、重症感染性肺炎、特殊病毒感染（H1N7/塞卡等）</a>
+                            </div>
+                            <div class="flaxBox">
+                                <div class="flaxBoxPart">
+                                    <span class="totalPoints">65分</span>
+                                    <span>绿色（<i>0</i>）项</span>
+                                    <span>黄色（<i class="fiveLength">0</i>）项</span>
+                                    <span>橙色（<i class="tenLength">0</i>）项</span>
+                                    <span>红色（<i class="twentyLength">0</i>）项</span>
+                                    <span>紫色（<i class="purpleLength">0</i>）项</span>
+                                    <input type="button" value="完&nbsp;成" class="finishBtn">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 检查确认模块 -->
+                        <div class="layui-tab-item checkAffirmBox layui-show">
+                            <div class="checkAffirmBox_top clearfix">
+                               <div class="fl assessmentInformation">
+                                   <p>评估信息</p>
+                                    <span class="greenStrip">绿色（12）项</span>
+                                    <span class="yellowStrip">黄色（12）项</span>
+                                    <span class="orangeStrip">橙色（12）项</span>
+                                    <span class="redStrip">红色（12）项</span>
+                                    <span class="proponStrip">紫色（12）项</span>
+                               </div>
+                               <div class="fr gradeInformation">
+                                <h2><span class="grade">56</span><i>分</i></h2>
+                                <p>初次筛查与评分</p>
+                               </div>
+                            </div>
+                            <div class="wire4"></div>
+                            <div class="affirmBox2">
+                                <h3>评估详情</h3>
+                                    <span class="greenStrip">绿色(低风险)</span>
+                                    <div class="greenDiv"></div>
+                                    <span class="yellowStrip">黄色(一般风险)</span>
+                                    <div class="yellowDiv"></div>
+                                    <span class="orangeStrip">橙色(较高风险)</span>
+                                    <div class="orangeDiv"></div>
+                                    <span class="redStrip">红色(高风险)</span>
+                                    <div class="redDiv"></div>
+                                    <span class="proponStrip">紫色(传染病)</span>
+                                    <div class="purpleDiv"></div>
+                            </div>
+
+                        <h1 class="operator">操作人：<span>周晓晓</span></h1>
 
 
 
@@ -912,22 +1169,10 @@
 
 
                         </div>
-
-
-
-
-
-
-
-
-
-
-
-                        <div class="layui-tab-item riskAssessmentBox">内容5</div>
-                        <div class="layui-tab-item checkAffirmBox">内容6</div>
-                    </form>
                 </div>
             </div>
+                </form>
+
         </div>
     </main>
     <footer>

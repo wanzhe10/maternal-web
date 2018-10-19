@@ -46,5 +46,7 @@ $(function () {
     // 修改怀孕次数弹框确认按钮
     $('saveBtn').click(function(){
     });
-  
+    $(".riskAssessmentBox").delegate(".topicItem", "click", function () {
+        $(this).toggleClass("active");
+    })
 });

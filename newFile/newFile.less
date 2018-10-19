@@ -4,7 +4,8 @@ body {
     background-color: #f6f6f6;
     width: 1200px;
     margin: 0 auto;
-    min-width: 1200px; // position: relative;
+    min-width: 1200px; 
+    // position: relative;
 }
 
 .layui-tab-brief>.layui-tab-title .layui-this {
@@ -78,9 +79,20 @@ body {
 .w150{
     width: 150px;
 }
-
+.mgl10 {
+    margin-left: 10px;
+}
 .mgl16 {
     margin-left: 16px;
+}
+.mgl24 {
+    margin-left: 24px;
+}
+.mgl28{
+    margin-left: 28px;
+}
+.mgl174{
+    margin-left: 174px;
 }
 .mgr0 {
     margin-right: 0px !important;
@@ -88,6 +100,9 @@ body {
 }
 .mgr30 {
     margin-right:30px !important;
+}
+.mgr34 {
+    margin-right:34px !important;
 }
 .mgr38 {
     margin-right:44px !important;
@@ -114,6 +129,9 @@ body {
 
 .fl{
     float: left;
+}
+.fr{
+    float: right;
 }
 header {
     .headerBox {
@@ -180,6 +198,7 @@ header {
 }
 
 main {
+    position: relative;
     // 左块
     .leftBox {
         position: absolute;
@@ -206,16 +225,16 @@ main {
             .layui-icon {
                 color: #ababab;
             }
-            &:after {
-                content: ' ';
-                position: absolute;
-                top: 44%;
-                right: 53px;
-                width: 0;
-                height: 0;
-                border: 6px solid transparent;
-                border-top: 6px solid #ababab;
-            }
+            // &:after {
+            //     content: ' ';
+            //     position: absolute;
+            //     top: 44%;
+            //     right: 53px;
+            //     width: 0;
+            //     height: 0;
+            //     border: 6px solid transparent;
+            //     border-top: 6px solid #ababab;
+            // }
         }
         .headline:hover {
             cursor: pointer;
@@ -238,6 +257,7 @@ main {
             }
         }
         .layui-tab-content {
+            position: relative;
             background-color: #fff;
             padding: 14px 24px 24px 28px;
             margin-top: 15px;
@@ -616,6 +636,7 @@ main {
                     border-bottom: 1px dashed #ccc;
                     margin-top: 24px;
                 } 
+                
                 .gestationalWeeksBox{
                     margin-right: 0;
                        width: 260px;
@@ -936,7 +957,641 @@ main {
                         width: 108px;
                     }
                 }
+                .modelBox{
+                     .diagnoseTittle{
+                    font-size: 16px;
+                    color:#333333;
+                    position: relative;
+                      &:after {
+                            content: ' ';
+                            position: absolute;
+                            top: 24%;
+                            right: -14px;
+                            width: 1px;
+                            height:12px;
+                            background-color: #ccc;
+                           
+                        }
+
+                }
+                
+                   
+                }
+                   .primaryDiagnosisBtn,.disposalBtn{
+                        // margin-left: 48px;
+                        position: relative;
+                        .fileIcon{
+                    background: url('/maternal-web/images/file.png') no-repeat 0 0;
+                    width: 12px;
+                    height: 14px;
+                    background-size: 12px 14px;
+                    position: absolute;
+                    bottom:3px;
+                    left: 24px;
+                }
+                 .templateTittle{
+                        margin-left: 48px;
+                        font-size: 14px;
+                        color:#999999;
+                    }
+                    }
+                    .primaryDiagnosisBtn:hover,.disposalBtn{
+                        cursor: pointer;
+                    }
+                   
+               .primaryDiagnosis,.disposal{
+                   width: 100%;
+                   padding-left: 16px;
+                   border-bottom:1px solid #ccc;
+                    height: 20px;
+                    margin-top: 10px;
+                    line-height: 16px;
+                    color:#666666;
+                    font-size: 14px;
+               } 
+               
             }
+            // 高危评估模块
+            .riskAssessmentBox{
+                        div {
+                    display: inline-block; 
+                    h3 {
+                        font-size: 14px;
+                        color: #666666;
+                        margin: 10px 0;
+                    }
+                    input {
+                        width: 154px;
+                        height: 40px;
+                        border: 1px solid #ccc;
+                        border-radius: 8px; 
+                        padding-left: 16px;
+                    }
+                    .redFont {
+                        color: #fd4242;
+                        display: none;
+                    }
+                    .layui-unselect,
+                    .layui-form-select {
+                        input {
+                            background-color: #f6f6f6;
+                        }
+                    }
+                }  
+                  .wire {
+                    width: 100%;
+                    height: 2px;
+                    background-color: #e8e8e8;
+                    margin-top: 24px;
+                } 
+            .useBtn{
+                width: 60px;
+                height: 30px;
+                background-color: #68b6e7;
+                text-align: center;
+                line-height: 30px;
+                color:#fff;
+                border-radius: 8px;
+            }
+            // 基本情况块
+                    //  查看全部块 
+            .lookAtallBtnBox{
+                width: 100%;
+                position: relative;
+                margin-top:16px;
+                h2{
+                    font-size: 16px;
+                    display: inline-block;
+                    padding-right:14px;
+                }
+                .positionWire{
+                    position: absolute;
+                    display: inline-block;
+                    top:50%;
+                    right:0px;
+                    width: 860px;
+                    height: 1px;
+                    background-color: black;;
+
+                }
+                .positionWire2{
+                      position: absolute;
+                    display: inline-block;
+                    top:50%;
+                    right:0px;
+                    width: 830px;
+                    height: 1px;
+                    background-color: black;;
+                }
+                .basicLookAtallBtn,.pregnancyAllBtn{
+                    padding:0px 5px;
+                    position: absolute;
+                    right: 28px;
+                    top:0px;
+                    background-color: #fff;
+                    i{
+                        color:#68b6e7;
+                    }
+                    span{
+                        color:#999999;
+                    }
+                }
+            }
+            .basicInformationBox{
+                .partBox{
+                    margin-top:26px;
+                    width: 284px;
+                    .partBox_top{
+                        padding-bottom:10px;
+                         width: 284px;
+                          border-bottom:1px solid #999999;
+                        i{
+                            font-style:normal;
+                            font-size: 19px;
+                        }
+                        span{
+                            font-size: 14px;
+                        }
+                        .fen{
+                            position: relative;
+                             &:before {
+                                content: ' ';
+                                position: absolute;
+                                top: 2px;
+                                left: 30px;
+                                width: 1px;
+                                height: 16px;
+                                background: #cccccc;
+                            }
+                        }
+                    }
+                    .topicBox {
+                        margin-top:16px;
+                        display: flex;
+                        flex: 1;
+                        flex-wrap: wrap;
+                        >a {
+                            font-size:16px;
+                            color: #666666;
+                            line-height: 30px;
+                            padding-left: 26px;
+                            background: url("/maternal-web/images/radio_false.png") no-repeat left center;
+                            background-size:16px 16px;
+                            &.active {
+                                background: url("/maternal-web/images/radio_true.png") no-repeat left center;
+                               background-size:16px 16px;
+                            }
+                        }
+                    }
+                }
+            }
+            // 孕期合并发症选择块
+            .pregnancySelectBox{
+                margin-top:20px;
+                li{
+                    font-size: 14px;
+                    color:#666666;
+                    padding:8px 15px;
+                    display: inline-block;
+                    border:1px solid #ccc;
+                    border-radius: 8px;
+                    margin-right:14px;
+                    margin-bottom:14px;
+                }
+                li:hover{
+                    cursor: pointer;
+                }
+                .selectAllBtn{
+                    width: 64px;
+                    height: 32px;
+                    line-height: 32px;
+                    border-radius: 50px;
+                    text-align: center;
+                    margin-right:14px;
+                    padding:0px;
+                }
+            }   
+            // 添加内容块
+              .contentBox{
+                    .lookAtallBtnBox{
+                width: 100%;
+                position: relative;
+                margin-top:16px;
+                h2{
+                    font-size: 14px;
+                    display: inline-block;
+                    padding-right:14px;
+                }
+                .positionWire{
+                    position: absolute;
+                    display: inline-block;
+                    top:50%;
+                    right:0px;
+                    width: 860px;
+                    height: 1px;
+                    background-color: black;;
+
+                }
+                .positionWire2{
+                      position: absolute;
+                    display: inline-block;
+                    top:50%;
+                    right:0px;
+                    width: 830px;
+                    height: 1px;
+                    background-color: #cccccc;
+                    }
+               
+                  }
+                    .partBox{
+                    width: 284px;
+                    .topicBox {
+                        margin-top:16px;
+                        display: flex;
+                        flex: 1;
+                        flex-wrap: wrap;
+                        >a {
+                            font-size:16px;
+                            color: #666666;
+                            line-height: 30px;
+                            padding-left: 26px;
+                            background: url("/maternal-web/images/radio_false.png") no-repeat left center;
+                            background-size:16px 16px;
+                            &.active {
+                                background: url("/maternal-web/images/radio_true.png") no-repeat left center;
+                               background-size:16px 16px;
+                            }
+                        }
+                    }
+                }
+              }
+              .violetBtn{
+                     padding:0px 5px;
+                    position: absolute;
+                    right: 28px;
+                    top:0px;
+                    background-color: #fff;
+                    i{
+                        color:#68b6e7;
+                    }
+                    span{
+                        color:#999999;
+                    }
+              }
+               .positionWire3{
+                    position: absolute;
+                    display: inline-block;
+                    top:50%;
+                    right:0px;
+                    width: 890px;
+                    height: 1px;
+                    background-color: #999;;
+                }
+                .violetConcealBox{
+                    margin-top:10px;
+                       >a {
+                            font-size:16px;
+                            color: #666666;
+                            line-height: 30px;
+                            padding-left: 26px;
+                            background: url("/maternal-web/images/radio_false.png") no-repeat left center;
+                            background-size:16px 16px;
+                            &.active {
+                                background: url("/maternal-web/images/radio_true.png") no-repeat left center;
+                               background-size:16px 16px;
+                            }
+                        }
+                }
+
+            .flaxBox{
+                height: 88px;
+                width: 100%;
+                position: fixed;
+                // background-color: #fff;
+                opacity: 1;
+                bottom:0px;
+                left: 0;
+                text-align: center;
+                .flaxBoxPart{
+                    width: 1200px;
+                background-color: #86c5ec;
+                    .totalPoints{
+                    position: relative;
+                    font-size: 24px;
+                    color:#ffffff;
+                    line-height: 88px;
+                    margin-right:74px;
+                      &:before {
+                                content: ' ';
+                                position: absolute;
+                                top: 2px;
+                                right: -28px;
+                                width: 1px;
+                                height: 30px;
+                                background: #fff;
+                            }
+                }
+                span{
+                    font-size: 16px;
+                    color:#fff;
+                    margin-right:26px;
+                        i{
+                            font-style: normal;
+                        }
+                    }
+                    .finishBtn{
+                        background-color: #f3f9fd;
+                        width: 160px;
+                        text-align: center;
+                        padding:0px;
+                        border:none;
+                        margin-left: 60px;
+                    }
+                }
+                
+            }
+  
+        }
+    
+                  // 检查确认模块
+.checkAffirmBox{
+    .checkAffirmBox_top{
+        .assessmentInformation{
+            p{
+                font-size: 16px;
+                color:#333333;
+                margin-bottom:20px;
+            }
+            span{
+                position: relative;
+                margin-right:20px;
+                padding-left: 16px;
+            }
+             .greenStrip {
+            &:after {
+                content: ' ';
+                position: absolute;
+                top: 4px;
+                left: 0;
+                width: 10px;
+                height: 10px;
+                background-color: green;
+                border-radius: 50%;
+            }
+             &:before {
+                content: ' ';
+                position: absolute;
+                top: 5px;
+                right: -14px;
+                width: 1px;
+                height: 10px;
+                background-color: #ccc;
+
+            }
+        }
+        .yellowStrip {
+            &:after {
+                content: ' ';
+                position: absolute;
+                top: 4px;
+                left: 0;
+                width: 10px;
+                height: 10px;
+                background-color: yellow;
+                border-radius: 50%;
+            }
+             &:before {
+                content: ' ';
+                position: absolute;
+                top: 5px;
+                right: -14px;
+                width: 1px;
+                height: 10px;
+                background-color: #ccc;
+
+            }
+        }
+        .orangeStrip {
+            &:after {
+                content: ' ';
+                position: absolute;
+                top: 4px;
+                left: 0;
+                width: 10px;
+                height: 10px;
+                background-color: orange;
+                border-radius: 50%;
+            }
+            &:before {
+                content: ' ';
+                position: absolute;
+                top: 5px;
+                right: -14px;
+                width: 1px;
+                height: 10px;
+                background-color: #ccc;
+
+            }
+        }
+        .proponStrip {
+            &:after {
+                content: ' ';
+                position: absolute;
+                top: 4px;
+                left: 0;
+                width: 10px;
+                height: 10px;
+                background-color: purple;
+                border-radius: 50%;
+            }
+        }
+        .redStrip {
+            &:after {
+                content: ' ';
+                position: absolute;
+                top: 4px;
+                left: 0;
+                width: 10px;
+                height: 10px;
+                background-color: red;
+                border-radius: 50%;
+            }
+             &:before {
+                content: ' ';
+                position: absolute;
+                top: 5px;
+                right: -14px;
+                width: 1px;
+                height: 10px;
+                background-color: #ccc;
+            }
+        }
+        }
+        
+
+    }
+    .gradeInformation{
+        height: 62px;
+        border-left: 1px solid #ccc;
+        // padding-left: 60px;
+        width: 210px;
+        text-align: center;
+        h2{
+               margin-bottom: 4px;
+            .grade{
+                font-size: 24px;
+                color: #68b6e7;
+             
+            }
+            i{
+                font-size: 14px;
+                font-style: normal;
+                color:#68b6e7;
+            }
+        }
+         p{
+                color:#666666;
+                font-size: 12px;
+            }
+        
+    }
+    .wire4{
+        left: 0;
+        width: 994px;
+        height: 12px;
+        background-color: #f6f6f6;
+        position: absolute;
+        margin-top:20px;
+
+    }
+    //  .checkAffirmBox_bottom{
+    //    margin-top:46px;
+    //     h2{
+    //         font-size: 16px;
+    //         color:#333333;
+    //         margin-bottom:20px;
+    //     }
+    //     p{
+    //         position: relative;
+    //     }
+    //     
+    // }
+
+      .affirmBox2 {
+          margin-top:46px;
+                h3 {
+                    display: block;
+                    color: #333333;
+                }
+                    span {
+                        color: #666666;
+                        margin-top:16px;
+                        margin-bottom:40px;
+                        position: relative;
+                        padding-left: 18px;
+                        display: inline-block;
+                    }
+                    div {
+                        flex: 1;
+                        border-bottom: 1px solid black;
+                    }
+                 .greenStrip {
+                        &:after {
+                        content: ' ';
+                        position: absolute;
+                        top: 3px;
+                        left: 0;
+                        width: 14px;
+                        height: 14px;
+                        background-color: green;
+                        border-radius: 50%;
+                            }
+                        }
+                        .yellowStrip {
+                        &:after {
+                        content: ' ';
+                        position: absolute;
+                        top: 3px;
+                        left: 0;
+                        width: 14px;
+                        height: 14px;
+                        background-color: yellow;
+                        border-radius: 50%;
+                         }
+                        }
+                        .orangeStrip {
+                        &:after {
+                        content: ' ';
+                        position: absolute;
+                        top: 3px;
+                        left: 0;
+                        width: 14px;
+                        height: 14px;
+                        background-color: orange;
+                        border-radius: 50%;
+                         }   
+                        }
+                        .proponStrip {
+                        &:after {
+                        content: ' ';
+                        position: absolute;
+                        top: 3px;
+                        left: 0;
+                        width: 14px;
+                        height: 14px;
+                        background-color: purple;
+                        border-radius: 50%;
+                         }
+                        }
+                        .redStrip {
+                        &:after {
+                        content: ' ';
+                        position: absolute;
+                        top: 3px;
+                        left: 0;
+                        width: 14px;
+                        height: 14px;
+                        background-color: red;
+                        border-radius: 50%;
+                            }
+                        }
+            }
+        .operator{
+            text-align: right;
+            font-size: 14px;
+            color:#333333;
+            margin-top:30px;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
     }
 }
