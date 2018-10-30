@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="/maternal-web/plugins/layui/css/layui.css">
+    <link rel="stylesheet/less" type="text/css" href="/maternal-web/personalCenter/personalCenter.less" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <script src="/maternal-web/js/jquery.js" charset="utf-8"></script>
+    <script src="/maternal-web/plugins/layui/layui.all.js" charset="utf-8"></script>
+    <script src="/maternal-web/js/less.min.js"></script>
+    <script src="/maternal-web/js/root.js" charset="utf-8"></script>
+    <script src="/maternal-web/personalCenter/personalCenter.js" charset="utf-8"></script>
+</head>
+<script>
+
+</script>
+
+<body>
+    <header>
+        <div class="headerBox clearfix">
+            <img src="/maternal-web/images/login.png" alt="围产期建档评估管理系统">
+            <span class="character">患者个人中心</span>
+            <div class="headerrightBox">
+                <p class="welcome">欢迎<i class="doctorName">周晓晓</i>医生</p>
+                <div class="exitBtn">
+                    <i class="exitIcon"></i>
+                    <span>退出登录</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="leftBox">
+            <div class="headline headline1 active">
+                <img src="/maternal-web/images/Archives.png" alt=" 档案管理" class="seticonManagement leftIcon">档案管理&nbsp;&nbsp;
+            <i class="layui-icon layui-icon-down"></i>
+            </div>
+            <!-- <ul class="configurationTop">
+        <li class="womenInformationLi active">
+            <i class="newsIcon2"></i>
+            <i class="newsIcon icon2" style="display:block;"></i> 机构信息维护
+        </li>
+        <li class="newRecordLi">
+            科室信息维护
+        </li>
+        <li class=" assessmentLi">
+            人员信息维护
+        </li>
+        <li class="affirmLi">
+            人员角色维护
+        </li>
+        <li class="jurisdiction">
+            产检信息维护
+        </li>
+        <li class="report">
+            报告单解读维护
+        </li>
+</ul> -->
+            <div class="headline headline2">
+                <img src="/maternal-web/images/user.png" alt="用户管理" class="userManagement leftIcon">用户管理&nbsp;&nbsp;
+               <i class="layui-icon layui-icon-down"></i>
+            </div>
+            <div class="headline headline3">
+                <img src="/maternal-web/images/Settings.png" alt="后台配置" class="managementicon leftIcon">后台配置&nbsp;&nbsp;
+               <i class="layui-icon layui-icon-down"></i>
+            </div>
+            <div class="headline headline4">
+                <img src="/maternal-web/images/data.png" alt="数据统计" class="dataManagementicon leftIcon">数据统计&nbsp;&nbsp;
+               <i class="layui-icon layui-icon-down"></i>
+            </div>
+            <!-- <ul class="configurationBottom">
+        <li class="">
+            用户个人信息
+        </li>
+        <li class="">
+            修改密码
+        </li>
+    </ul> -->
+        </div>
+        <div class="rightBox">
+            <!-- 个人信息模块 -->
+            <div class="informationBox clearfix">
+                <div class="informationBox_left clearfix">
+                    <div class="headIcon">
+                        <a href="javascript:;">
+                            <div class="preview">预&nbsp;览</div>
+                        </a>
+                    </div>
+                    <p>
+                        <span class="name">王多余</span>
+                        <span class="age">25岁</span>
+                    </p>
+                    <div class="BMLValue">BMI值</div>
+                    <i class="crossIcon"></i>
+                    <!-- <div class="gestationIcon">妊娠图</div> -->
+                </div>
+                <div class="informationBox_right">
+                    <div class="newsBoxTop">
+                        <p><span>就诊卡号：</span>98054321<span></span></p>
+                        <p><span>建档时间：</span>2018-09-28<span></span></p>
+                        <p><span>联系方式：</span><span>16619703541</span></p>
+                        <p><span>身份证号：</span><span>130184199903292018x</span></p>
+                        <p><span>出生年月：</span><span>1999-03-29</span></p>
+                        <p><span class="mgl24">血 型：</span><span>O型</span></p>
+                        <p><span>孕前体重：</span><span>65kg</span></p>
+                        <p><span class="mgl12">孕产史：</span><span>13+14周</span></p>
+                    </div>
+                    <div class="newsBoxBottom">
+                        <p class="newsBoxBottomFamily"><span>家族史：</span><span>高血压、冠心病、阑尾炎、精神病</span></p>
+                        <div class="assessmentInformation">
+                            <span class="pdl0 mgr0">高危因素：</span>
+                            <span class="greenStrip">绿色（12）项</span>
+                            <span class="yellowStrip">黄色（12）项</span>
+                            <span class="orangeStrip">橙色（12）项</span>
+                            <span class="redStrip">红色（12）项</span>
+                            <span class="proponStrip">紫色（12）项</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 信息teb切换模块 -->
+            <div class="newsTebBox">
+                <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+                    <ul class="layui-tab-title">
+                        <li class="layui-this recheck">复检记录</li>
+                        <li class="evaluate">高危评估记录</li>
+                        <li class="record">产后42天检查记录</li>
+                    </ul>
+                    <div class="layui-tab-content">
+                        <!-- 复检记录 -->
+                        <div class="layui-tab-item recordBox layui-show clearfix">
+                            <div class="recordNumsBox">
+                                <h2>产检记录（<i class="recordNum">10</i>）<i class="crossIcon"></i></h2>
+                                <ul>
+                                    <li class="active">
+                                        <p>第一次产检</p>
+                                        <span>2018-12-12</span>
+                                        <div class="triangleIocn"></div>
+
+                                    </li>
+                                    <li>
+                                        <p>第二次产检</p>
+                                        <span>2018-12-12</span>
+                                        <div class="triangleIocn"></div>
+
+                                    </li>
+                                    <li>
+                                        <p>第三次产检</p>
+                                        <span>2018-12-12</span>
+                                        <div class="triangleIocn"></div>
+
+                                    </li>
+                                    <li class="">
+                                        <p>第四次产检</p>
+                                        <span>2018-12-12</span>
+                                        <div class="triangleIocn"></div>
+
+                                    </li>
+                                    <li>
+                                        <p>第五次产检</p>
+                                        <span>2018-12-12</span>
+                                        <div class="triangleIocn"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 复检右边详细信息块 -->
+                            <div class="recheckDetailedInformation">
+                                <p class="tableHeader"><span class="recheckDegree">第二次产检</span><span class="recheckWeek">5+3周</span></p>
+                                <p><span class="cl666">检查日期：</span><span class="examination">2018-12-12</span><span
+                                        class="cl666">预约下次日期：</span><span>2018-11-11</span></p>
+                                <div class="wire"></div>
+                                <div class="recheckTable clearfix">
+                                    <div>
+                                        <i class="triangleIocn1"></i>
+                                        <p>血压：<span>110/120</span><i>mmHg</i></p>
+                                        <p>体重：<span>110</span><i>kg</i></p>
+                                        <p>宫高：<span>15</span><i>cm</i></p>
+                                        <p>腹围：<span>50</span><i>cm</i></p>
+                                    </div>
+                                    <div>
+                                        <i class="triangleIocn2"></i>
+                                        <p>胎方位：<span>枕左前位</span></p>
+                                        <p>先&nbsp;&nbsp;&nbsp;露：<span>头先露</span></p>
+                                        <p>衔&nbsp;&nbsp;&nbsp;接：<span>已衔接</span></p>
+                                    </div>
+                                    <div>
+                                        <p>胎心率：<span>110 次/分</span></p>
+                                        <p>浮&nbsp;&nbsp;&nbsp;肿：<span>轻</span></p>
+                                        <p>腹&nbsp;&nbsp;&nbsp;围：<span>+1</span></p>
+                                    </div>
+                                </div>
+                                <!-- 自觉不适查看全部 -->
+                                <div class="lookAtallBtnBox">
+                                    <h2>自觉不适</h2>
+                                    <div class="positionWire"></div>
+                                    <div class="basicLookAtallBtn conscientiousAll">
+                                        <span>查看全部</span>
+                                        
+                                        <i class="layui-icon layui-icon-down" id="conscientiousAllIcon"></i>
+                                    </div>
+                                </div>
+                                <!-- 自觉不适内容 -->
+                                <p class="malaise">哪里那里离有点好像不舒服呀，怎办法呢哪里那里离有点好像不舒服呀，怎办法呢，哪里那里离有点好像不舒服
+                                    呀，怎办法呢哪里那里离有点好像不舒服呀，怎办法呢哪里那里离有点好像不舒服呀，怎办法呢</p>
+
+                                    <!-- 指导处理意见查看全部 -->
+                                <div class="lookAtallBtnBox">
+                                    <h2>指导处理意见</h2>
+                                    <div class="positionWire2"></div>
+                                    <div class="guidanceBtn">
+                                        <span>查看全部</span>
+                                        <i class="layui-icon layui-icon-down" id="guidanceBtnIcon"></i>
+                                    </div>
+                                </div>
+                                <!-- 指导处理意见内容 -->
+                                <p class="handlingSuggestion">哪里那里离有点好像不舒服呀，怎办法呢哪里那里离有点好像不舒服呀，怎办法呢，哪里那里离有点好像不舒服
+                                    呀，怎办法呢哪里那里离有点好像不舒服呀，怎办法呢哪里那里离有点好像不舒服呀，怎办法呢</p>
+
+                                    <!-- 检查结果查看全部 -->
+                                <div class="lookAtallBtnBox">
+                                    <h2>检查结果</h2>
+                                    <div class="positionWire"></div>
+                                <div class="inspectionResult">
+                                        <span>查看全部</span>
+                                    <i class="layui-icon layui-icon-down" id="inspectionResultIcon"></i>
+                                    </div>
+                                </div>
+
+                                <!-- 检查结果内容 -->
+                                 <div class="consequenceBox">
+                                        <ul class="clearfix">
+                                            <li>
+                                                <div></div>
+                                            </li>
+                                            <li>
+                                                <div></div>
+                                            </li>
+                                            <li>
+                                                <div></div>
+                                            </li>
+                                            <li>
+                                                <div></div>
+                                            </li>
+                                            <li>
+                                                <div></div>
+                                            </li>
+                                            <li>
+                                                <div></div>
+                                            </li>
+                                            <li>
+                                                <div></div>
+                                            </li>
+                                            <li>
+                                                <div></div>
+                                            </li>
+                                            <li>
+                                                <div></div>
+                                            </li>
+                                            <li>
+                                                <div></div>
+                                            </li>
+                                        </ul>
+
+                                 </div>
+                                 
+                                
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- 高危评估块 -->
+                        <div class="layui-tab-item spouseNewsBox  assessBox">
+                            内容二
+                        </div>
+                        <!-- 产后42天模块 -->
+                        <div class="layui-tab-item fortyTwoBox  clearfix">
+                            内容三
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- BIM值弹框 -->
+                <div class="bmiBox">
+                    <div class="bmiHeader clearfix"><span>BMI值</span> <img src="/maternal-web/images/cross.png" alt="关闭" class="bmiCloneBtn"></div>
+                    <div class="bmiBoxMain">
+                        <div class="bmiNewsBox">
+                            <h3>BMI孕期体重管理曲线图</h3>
+                            <p>孕前BMI：18.5-24.9kg/m</p>
+                            <p>体重正常，建议孕期体重增长目标：11.5~16kg</p>
+                        </div>
+                        <div class="EcharsBox"></div>
+                    </div>
+                </div>
+    </main>
+    <footer>
+        <p class="footerNews">Copyright © 2018 医来医往(北京)科技有限公司</p>
+    </footer>
+
+</body>
+
+</html>

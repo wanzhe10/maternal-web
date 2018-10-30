@@ -160,7 +160,16 @@ input:-moz-placeholder {
 /* body .noBackground,.layui-layer,.layui-layer-content {
     background: none !important;
 } */
-body{
-   /* font-family: "Microsoft YaHei" ! important; */
-   font-family: 微软雅黑;
+body {
+    /* font-family: "Microsoft YaHei" ! important; */
+    font-family: 微软雅黑;
+}
+
+body .layui-layer {
+    border-radius: 10px;
+}
+
+body .noBackground {
+    box-shadow: none;
+    background: none;
 }

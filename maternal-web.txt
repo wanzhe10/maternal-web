@@ -16,4 +16,7 @@ maternal-web 孕产妇-web端 目录结构
         /newFile.html
         /newFile.less
         /newFile.js
-        
+    /personalCenter               个人中心
+        /personalCenter.html
+        /personalCenter.less
+        /personalCenter.js
