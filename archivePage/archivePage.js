@@ -18,9 +18,7 @@ $(function(){
                 limit: 7, // 每页的条数
                 groups: 4,
                 jump: function (obj, first) {
-                   
                 }
-
             });
         });
 

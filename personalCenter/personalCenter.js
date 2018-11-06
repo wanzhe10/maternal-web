@@ -51,13 +51,19 @@ $(function () {
         $(this).toggleClass("active");
     })
 
-        // teb切换
+        // 复检记录次数切换
         $('.recordNumsBox>ul>li').click(function () {
-            var index = $(this).index();
-            console.log(index)
+            // var index = $(this).index();
             $(this).siblings().removeClass('active');
             $(this).addClass('active');
         });
+          // 高危评估次数切换
+          $('.spouseNumsBox>ul>li').click(function () {
+            //   var index = $(this).index();
+            //   console.log(index)
+              $(this).siblings().removeClass('active');
+              $(this).addClass('active');
+          });
         // 自觉不适查看全部按钮
         $('.conscientiousAll').click(function(){
             $('.malaise').toggle(500);
@@ -85,6 +91,15 @@ $(function () {
                     $('#inspectionResultIcon').removeClass('layui-icon-up').addClass('layui-icon-down');
                 }
             });
+               //检查结果查看全部按钮
+               $('.assessInformationBtn').click(function () {
+                   $('.assessInformationBox').toggle(500);
+                   if ($('#assessInformationIcon').hasClass('layui-icon-down')) {
+                       $('#assessInformationIcon').removeClass('layui-icon-down').addClass('layui-icon-up');
+                   } else {
+                       $('#assessInformationIcon').removeClass('layui-icon-up').addClass('layui-icon-down');
+                   }
+               });
 
    // BMI弹框
    $('.BMLValue').click(function () {

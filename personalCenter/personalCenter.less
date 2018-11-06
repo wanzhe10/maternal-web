@@ -150,6 +150,9 @@ body {
 .mgb12 {
     margin-bottom: 12px;
 }
+.mgb16 {
+    margin-bottom: 16px;
+}
 
 .mgb20 {
     margin-bottom: 20px;
@@ -528,7 +531,7 @@ main {
             margin-top: 14px;
             background-color: #fff;
              padding-bottom:20px;
-
+// 复检记录模块
             .recordBox{
                 .recordNumsBox{
                     display: inline-block;
@@ -779,6 +782,224 @@ main {
             }
                 }
             }
+
+// 高危评估模块
+            .spouseNewsBox{
+                    .spouseNumsBox{
+                    display: inline-block;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    width: 168px;
+                    height: 500px;
+                    background-color: #fff;
+                    border:1px solid #ccc;
+                    float: left;
+                    h2{
+                        display: inline-block;
+                        height: 52px;
+                        width: 100%;
+                        text-align: center;
+                        line-height: 52px;
+                        font-size: 14px;
+                        color:#333333;
+                        border-bottom: 1px solid #ccc;
+                        position: relative;
+                         .crossIcon{
+                    background: url('/maternal-web/images/cross.png') no-repeat 0 0;
+                    width: 8px;
+                    height: 8px;
+                    position: absolute;
+                    top:48px;
+                    right:84px;
+                    background-color: #fff;
+                }
+                i{
+                    font-style: normal;
+                }
+                    }
+                    ul{
+                        margin-top:10px;
+                        >li{
+                        position: relative;
+                            width: 100%;
+                            padding:8px 0px;
+                        padding-left: 40px;
+                        i{
+                            display: inline-block;
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 50%;
+                            position: absolute;
+                            top:10px;
+                            left:14px;
+                        }
+                            p{
+                                font-size: 14px;
+                                color:#333333
+                                
+                            }
+                            span{
+                                font-size: 12px;
+                                color:#666666;
+                            }
+                        .triangleIocn {
+                        width: 20px;
+                        height: 20px;
+                    border-width: 10px;
+                        border-style: solid;
+                        border-color: transparent;
+                        border-left-color: #68b6e7;
+                        display: none;
+                        position: absolute;
+                        top:15px;
+                        right:-20px;
+                        // transition: 0.5s all;
+        }
+                        }
+                        .active{
+                            background-color: #68b6e7;
+                            color:#fff !important;
+                            p{
+                                color: #fff;
+                            }
+                            span{
+                                color: #fff;
+                            }
+                             .triangleIocn{
+                                //   border-left-color: #68b6e7;
+                                display: block;
+                             }
+                        }
+                    }
+           
+                }
+                  .assessDetailedInformation{
+                    float: left;
+                   padding:15px 0px 0px 30px;
+                   width: 800px;
+                    .tableHeader{
+                        font-size: 16px;
+                        color:#68b7e7;
+                        margin-bottom:14px;
+                        .assessDegree{
+                            position: relative;
+                            margin-right:30px;
+                             &:after {
+                                content: ' ';
+                                position: absolute;
+                                top: 5px;
+                                right: -15px;
+                                width: 2px;
+                                height: 14px;
+                                background-color: #68b7e7;
+                                    }
+                        }
+                    }
+                     .assessexamination{
+                            position: relative;
+                            margin-right: 30px;
+                            &:after {
+                                content: ' ';
+                                position: absolute;
+                                top: 5px;
+                                right: -15px;
+                                width: 2px;
+                                height: 14px;
+                                background-color: #68b7e7;
+                                    }
+                        }
+                        .wire{
+                            width: 100%;
+                            height: 1px;
+                            background-color: #ccc;
+                            margin:20px 0px;
+                        }
+                
+                              //  查看全部块 
+            .lookAtallBtnBox{
+                width: 100%;
+                position: relative;
+                margin-top:16px;
+                h2{
+                    font-size: 16px;
+                    display: inline-block;
+                    padding-right:14px;
+                }
+                .positionWire{
+                    position: absolute;
+                    top:50%;
+                    right:0px;
+                    width: 90%;
+                    height: 1px;
+                    background-color: #ccc;
+                }
+                .positionWire2{
+                     width: 86%;
+                       position: absolute;
+                    top:50%;
+                    right:0px;
+                    height: 1px;
+                    background-color: #ccc;
+                }
+                .assessInformationBtn{
+                    padding:0px 5px;
+                    position: absolute;
+                    right: 28px;
+                    top:0px;
+                    background-color: #fff;
+                    cursor: pointer;
+                    i{
+                        color:#68b6e7;
+                    }
+                    span{
+                        color:#999999;
+                    }
+                }
+             }
+             .assessInformationBox {
+                 margin-top:20px;
+                        p {
+                            position: relative;
+                            color:#333333;
+                        }
+                    i{
+                            display: inline-block;
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 50%;
+                            position: absolute;
+                            top:3px;
+                            left:0px;
+
+                        }
+                    }
+                    .colour{
+                        margin-left: 18px;
+                        position: relative;
+                        margin-right:26px;
+                         &:after {
+                                content: ' ';
+                                position: absolute;
+                                top: 5px;
+                                right: -13px;
+                                width: 1px;
+                                height: 14px;
+                                background-color: #ccc;
+                                    }
+                    }
+                    .colorTxt{
+                        font-size: 14px;
+                        color:#666666 !important;
+                        padding-bottom:8px;
+                        border-bottom: 1px solid #999999;
+                        margin-bottom:16px;
+                    }
+            }
+       
+         
+            }
         }
     }
     // BIM值弹框
@@ -786,6 +1007,7 @@ main {
         width: 800px;
         height: 480px;
         background-color: #f9f9f9;
+        display: none;
 
         .bmiHeader{
             height: 50px;
